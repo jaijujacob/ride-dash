@@ -22,6 +22,12 @@ counting the trip while another app is on top. Ride-Dash does not request backgr
 - **Weather (optional, on by default):** to show the outside temperature, an approximate position (rounded to about
   1 km) is sent to [Open-Meteo](https://open-meteo.com/) at most every 20 minutes. You can turn this off in
   Settings › Display.
+- **Speed breakers (optional, on by default):** to warn before speed breakers, the app downloads the speed breakers
+  mapped in [OpenStreetMap](https://www.openstreetmap.org/) for about 5 km around you from the
+  [Overpass API](https://overpass-api.de/), sending an approximate position (rounded to about 1 km). This happens only
+  when you reach an area not downloaded in the last 30 days; the results are kept on your device. Speed breakers you
+  mark yourself stay **only on your device**. You can turn this off in Settings › Trip & speed.
+- **Voice alerts:** spoken by your device's own text-to-speech engine; Ride-Dash sends nothing for them.
 - **Map tiles:** the map downloads map images for the area on screen from the
   [MapTiler](https://www.maptiler.com/) (Classic map style; tiles made from OpenStreetMap data) or
   [OpenFreeMap](https://openfreemap.org/) (Modern map style). As with any map, the requested area reveals the approximate region being
