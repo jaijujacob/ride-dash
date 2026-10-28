@@ -27,6 +27,8 @@ counting the trip while another app is on top. Ride-Dash does not request backgr
   [OpenFreeMap](https://openfreemap.org/) (Modern map style). As with any map, the requested area reveals the approximate region being
   viewed. No identifiers are added by Ride-Dash.
 
+- **Parking spot:** when a trip ends, its last good position is saved as your parking spot ("Where's my car").
+  The last 10 spots stay **only on your device**; sharing one is up to you.
 - **Navigation:** when you long-press a place on the map and confirm "Navigate", the place's coordinates are handed
   to Google Maps (or another navigation app you have installed) to start directions. Nothing is sent unless you
   confirm.
