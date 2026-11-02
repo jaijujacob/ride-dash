@@ -13,13 +13,26 @@ works on the device; no account needed.
 
 ![Ride-Dash in the Duo layout](images/manual/duo_white_driving_1600x720.png)
 
-**Contents:** [What's new](#whats-new-in-150) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
+**Contents:** [What's new](#whats-new-in-160) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
 [3 The dashboard](#3-the-dashboard) · [4 Layouts and colours](#4-layouts-and-colours) · [5 Speed and speed limits](#5-speed-and-speed-limits) ·
 [6 Driving mode, terrain and road info](#6-driving-mode-terrain-and-road-info) · [7 Map](#7-map) ·
 [8 Places on the map](#8-places-on-the-map) · [9 Music](#9-music) · [10 Trips](#10-trips) ·
 [11 Breaks](#11-break-reminder) · [12 Speed breakers](#12-speed-breakers) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
+
+## What's new in 1.6.0
+
+- **Background colour:** *Settings › Appearance › Background* — from black to mid grey, neutral or with a soft Blue,
+  Green, Red, Brown or Purple tint. The dials and displays stay dark and the map takes the same colour (section 4).
+- **Places on older head units:** fuel stations, ATMs, hospitals and the other places you ticked now show on the map of
+  older car head units too (section 8).
+- **Duo reworked:** dials at the top, the speed on the road in a small display, a larger trip display under it, all
+  centred; the street name, terrain and next speed breaker (or turn-by-turn) at the bottom left.
+- **Classic:** the speed on the road in the same small display.
+- **Turn-by-turn:** the next turn's arrow and distance, then the remaining distance and arrival time, larger.
+- **Every bar fills left to right**, and Twin's mph is larger.
+- **Faster:** smoother dials, and the map appears straight away when Ride-Dash starts.
 
 ## What's new in 1.5.0
 
@@ -126,6 +139,9 @@ The arrangement differs per layout, but every layout has the same pieces.
 ![Classic](images/manual/classic_white_driving_1600x720.png)
 
 Colour schemes: White (default), Amber, Blue, Red, Green, Titanium and Bronze — or choose your own display colour.
+**Background colour** (*Settings › Appearance › Background*): slide from black to mid grey and pick Neutral or a soft
+Blue, Green, Red, Brown or Purple tint. The dials and displays stay dark, so everything remains easy to read, and the
+map's land takes the same colour, a little darker.
 You can also upload a background image, your logo and a picture of your car (*Settings › Vehicle*).
 
 ![Duo in Blue](images/manual/duo_blue_driving_1600x720.png)
@@ -236,8 +252,8 @@ pressed spot is used. Press and hold one of **your own speed breakers** to delet
   street level. Names appear close up.
 - **Show places** off hides them all.
 - On phones and newer head units the places come with the map itself. On older head units (picture-tile map) they are
-  downloaded from OpenStreetMap for about 5 km around you, one group at a time, and kept for 30 days — the first time
-  in a new area they can take a minute to appear.
+  downloaded for about 5 km around you from the map service (MapTiler; OpenStreetMap's Overpass service as a backup)
+  and kept for 30 days — the first time in a new area they can take a minute to appear. Airports are not shown there.
 
 ## 9. Music
 
@@ -331,6 +347,7 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
 | --- | --- | --- |
 | Appearance | Dashboard layout | Classic |
 | Appearance | Colour scheme · custom colour | White · none |
+| Appearance | Background colour · tint | black · Neutral |
 | Appearance | Background image | none |
 | Vehicle | Vehicle title | Ride-Dash |
 | Vehicle | Brand logo · car image | app icon · none |

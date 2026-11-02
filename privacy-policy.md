@@ -27,6 +27,13 @@ counting the trip while another app is on top. Ride-Dash does not request backgr
   [Overpass API](https://overpass-api.de/), sending an approximate position (rounded to about 1 km). This happens only
   when you reach an area not downloaded in the last 30 days; the results are kept on your device. Speed breakers you
   mark yourself stay **only on your device**. You can turn this off in Settings › Trip & speed.
+- **Speed limits (optional, on by default):** the speed limits mapped in OpenStreetMap for about 5 km around you are
+  downloaded the same way from the Overpass API (approximate position, rounded to about 1 km; only for areas not
+  downloaded in the last 30 days; kept on your device). Turn off Settings › Trip & speed › Road speed limits to stop it.
+- **Places on older head units:** on units that show the picture-tile map, the places for the map (fuel stations,
+  ATMs, hospitals…) for about 5 km around you are taken from MapTiler's map tiles for that area (the same service that
+  supplies the map), or — if that fails — from the Overpass API (approximate position, rounded to about 1 km; only for
+  areas not downloaded in the last 30 days; kept on your device). Turn off Settings › Map › Show places to stop it.
 - **Voice alerts:** spoken by your device's own text-to-speech engine; Ride-Dash sends nothing for them.
 - **Map tiles:** the map downloads map images for the area on screen from the
   [MapTiler](https://www.maptiler.com/) (Classic map style; tiles made from OpenStreetMap data) or
