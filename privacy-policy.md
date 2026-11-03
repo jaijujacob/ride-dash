@@ -45,9 +45,13 @@ counting the trip while another app is on top. Ride-Dash does not request backgr
 
 - **Parking spot:** when a trip ends, its last good position is saved as your parking spot ("Where's my car").
   The last 10 spots stay **only on your device**; sharing one is up to you.
-- **Navigation:** when you long-press a place on the map and confirm "Navigate", the place's coordinates are handed
-  to Google Maps (or another navigation app you have installed) to start directions. Nothing is sent unless you
-  confirm.
+- **Navigation:** when you long-press a place on the map, pick a search result, and confirm **Navigate**, your current
+  position and the destination are sent to [GraphHopper](https://www.graphhopper.com/) to calculate the route shown
+  on Ride-Dash's map; while you drive, a new route is requested the same way when you leave the old one. With
+  **Google Maps** instead, the destination's coordinates are handed to Google Maps (or another navigation app you have
+  installed). Nothing is sent unless you confirm.
+- **Place search:** the text you type in the map's search box and your current position (to list nearby places first)
+  are sent to GraphHopper when you press Search. Ride-Dash keeps neither the searches nor the routes.
 - **Sights on the map** (viewpoints, monuments and similar) come from the same map data; no extra data is sent.
 
 ## Notifications and media
