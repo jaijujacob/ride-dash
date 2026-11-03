@@ -4,7 +4,7 @@ title: Ride-Dash user manual
 
 # Ride-Dash user manual
 
-_Version 1.7.0 · November 2026_
+_Version 1.8.0 · November 2026_
 
 Ride-Dash turns the phone in your holder — or your car's Android head unit — into a calm, complete car dashboard:
 live speed, gear, heading and altitude, the road you are on and its speed limit, trip statistics, terrain, speed
@@ -20,6 +20,19 @@ works on the device; no account needed.
 [11 Breaks](#11-break-reminder) · [12 Speed breakers](#12-speed-breakers) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
+
+## What's new in 1.8.0
+
+- **Navigation on the Ride-Dash map:** long-press a place, tap a place icon or search one, then **Navigate** — the
+  route is drawn on Ride-Dash's own map, the dashboard shows the next turn with its arrow, the distance to it and your
+  arrival time, and the turns are spoken. Leave the route and a new one is worked out. **Google Maps** is still one tap
+  away in the same question (section 7).
+- **Search a place:** the new **🔍 button** on the map finds places and addresses by name, nearby ones first
+  (section 7).
+- **Your own routing key** (optional): *Settings › Map › Navigation*.
+- **Voice:** a new *Turns* switch in *Settings › Trip & speed › Voice alerts*.
+- **Light layouts:** place names on the map are crisp again, and the light layouts are listed first in
+  *Settings › Appearance*.
 
 ## What's new in 1.7.0
 
@@ -155,8 +168,8 @@ The arrangement differs per layout, but every layout has the same pieces.
 Colour schemes: White (default), Amber, Blue, Red, Green, Titanium and Bronze — or choose your own display colour.
 **Background colour** (*Settings › Appearance › Background*): slide from black to mid grey and pick Neutral or a soft
 Blue, Green, Red, Brown or Purple tint. The dials and displays stay dark, so everything remains easy to read, and the
-map's land takes the same colour, a little darker. The light layouts — **Classic Light**, **Twin Light**, **Duo Light** and **Sport Light**, in their own *Light layouts* section below
-the others — start in the White colour scheme the first time you choose one, and have their own light background, light displays and a
+map's land takes the same colour, a little darker. The light layouts — **Classic Light**, **Twin Light**, **Duo Light** and **Sport Light**, in their own *Light layouts* section at the top
+(the dark ones follow under *Dark layouts*) — start in the White colour scheme the first time you choose one, and have their own light background, light displays and a
 light map (the background setting doesn't apply there); every colour scheme works with it in a deeper shade.
 You can also upload a background image, your logo and a picture of your car (*Settings › Vehicle*).
 
@@ -233,15 +246,32 @@ remaining distance and arrival time) takes its place.
 - **Map style:** *Classic* (dark street map, default) or *Modern* (a crisper vector map, on devices whose graphics allow it).
 - **Places:** the places you choose (section 8). The places button on the map shows or hides them all.
 - **Full screen:** the expand button fills the screen with the map; Back returns.
-- **Next turn** from Google Maps or Waze appears on the dashboard while they navigate (needs the access in step 2).
+- **Next turn** of Ride-Dash's own route (below), or from Google Maps or Waze while they navigate (needs the access in
+  step 2), appears on the dashboard.
 - Speed breakers show as red-bordered road signs; your parked car as a blue **P**.
 
 **Navigate to a long-pressed place.** Press and hold any spot on the map for about a second:
 
 1. Ride-Dash names the place under your finger — a shop, a landmark, or the road — and asks **"Navigate to MASS
    Road?"** (or "Navigate here?" where there is no name), with how far away it is.
-2. **Navigate** opens Google Maps with directions by car from where you are; without Google Maps, any installed
-   navigation app is offered. **Cancel** or wait 15 seconds to close the question.
+2. **Navigate** shows the route on Ride-Dash's own map (see *Navigating on the Ride-Dash map* below). **Google Maps**
+   opens Google Maps with directions by car from where you are; without Google Maps, any installed navigation app is
+   offered. **Cancel** or wait 15 seconds to close the question.
+
+**Search a place.** The **🔍 button** on the map opens a search box: type a place or an address (for example *lulu
+mall* or *MG Road Kochi*) and press Search. Places near you are listed first, each with how far away it is; tap one for
+the same "Navigate to …?" question.
+
+**Navigating on the Ride-Dash map.** After **Navigate** the route appears as a line on the map, and the dashboard's
+turn display shows the next turn with its arrow, the distance to it, the distance left and your arrival time. The turns
+are spoken ("In 300 metres, turn right onto MG Road") about 500 m and 150 m before the turn (earlier at higher speed)
+and at the turn, and "You have arrived at …" at the end. If you take another road, Ride-Dash works out a new route
+from where you are. The **✕ button** on the map stops navigating.
+
+Routes and searches come from GraphHopper over the internet; only the start, the destination and the search text are
+sent. Ride-Dash has a shared key whose daily limit all users share — for a key of your own (free), see
+*Settings › Map › Navigation* and **Get a free key at graphhopper.com**. Without any key, **Navigate** opens Google
+Maps as before.
 
 ![Navigate to a long-pressed place](images/manual/duo_white_navigate_1600x720.png)
 
@@ -338,6 +368,7 @@ Spoken through the car speakers like navigation (music gets quieter, then comes 
 - "Slow down. Speed limit 60." after 3 seconds above the road's limit plus your tolerance (or the red speed colour where
   no limit is mapped); again only after slowing 5 km/h below it, at most once a minute.
 - "Speed breaker ahead."
+- Turns while navigating on the Ride-Dash map: "In 300 metres, turn right onto MG Road", "You have arrived at …".
 
 *Settings › Trip & speed › Voice alerts:* on/off, a switch per alert, and **Test**.
 
