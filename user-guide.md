@@ -4,7 +4,7 @@ title: Ride-Dash user manual
 
 # Ride-Dash user manual
 
-_Version 1.5.0 · October 2026_
+_Version 1.7.0 · November 2026_
 
 Ride-Dash turns the phone in your holder — or your car's Android head unit — into a calm, complete car dashboard:
 live speed, gear, heading and altitude, the road you are on and its speed limit, trip statistics, terrain, speed
@@ -20,6 +20,16 @@ works on the device; no account needed.
 [11 Breaks](#11-break-reminder) · [12 Speed breakers](#12-speed-breakers) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
+
+## What's new in 1.7.0
+
+- **Light layouts** for bright daylight: **Classic Light**, **Twin Light**, **Duo Light** and **Sport Light** — a light
+  background, silver frame, light dials and displays and a light map, in every colour scheme. They have their own
+  *Light layouts* section in *Settings › Appearance*; the first one you choose starts in White (section 4).
+- **Street names on older head units:** the road you are on now shows on the simpler map of older car head units too
+  (section 6).
+- **Bigger buttons:** Settings, GPS and Power at the top right are larger and easier to tap.
+- **Classic:** the speed-breaker status now follows the mph reading at the bottom left.
 
 ## What's new in 1.6.0
 
@@ -129,6 +139,8 @@ The arrangement differs per layout, but every layout has the same pieces.
 | Duo | GT cluster with a wide map |
 | Cockpit | One ring gauge in the middle |
 | Classic | Analogue speedometer, compass and road |
+| Classic Light | Classic on a light background, for bright daylight |
+| Twin Light, Duo Light, Sport Light | Twin, Duo and Sport on a light background |
 | Sport | Big centred speedometer |
 | Modern | Fully digital cluster |
 | Twin | Speedometer and rev counter with a map window |
@@ -137,11 +149,15 @@ The arrangement differs per layout, but every layout has the same pieces.
 ![Lap](images/manual/lap_white_driving_1600x720.png)
 ![Cockpit](images/manual/cockpit_white_driving_1600x720.png)
 ![Classic](images/manual/classic_white_driving_1600x720.png)
+![Classic Light](images/manual/classic_light_white_driving_1600x720.png)
+![Duo Light](images/manual/duo_light_white_driving_1600x720.png)
 
 Colour schemes: White (default), Amber, Blue, Red, Green, Titanium and Bronze — or choose your own display colour.
 **Background colour** (*Settings › Appearance › Background*): slide from black to mid grey and pick Neutral or a soft
 Blue, Green, Red, Brown or Purple tint. The dials and displays stay dark, so everything remains easy to read, and the
-map's land takes the same colour, a little darker.
+map's land takes the same colour, a little darker. The light layouts — **Classic Light**, **Twin Light**, **Duo Light** and **Sport Light**, in their own *Light layouts* section below
+the others — start in the White colour scheme the first time you choose one, and have their own light background, light displays and a
+light map (the background setting doesn't apply there); every colour scheme works with it in a deeper shade.
 You can also upload a background image, your logo and a picture of your car (*Settings › Vehicle*).
 
 ![Duo in Blue](images/manual/duo_blue_driving_1600x720.png)
@@ -202,13 +218,14 @@ precisely; head units use GPS height. The trip log shows how much of each trip w
   alerts are on.
 
 The street name comes from the map itself, so it needs no extra data. It keeps the current road at junctions instead
-of flickering. On older head units that show the picture-tile map, street names aren't available and only the
-terrain and speed breaker lines appear. In some layouts the street name only appears once the map is zoomed in far
+of flickering. On older head units that show the picture-tile map, it comes from the same map data in the background
+(a small download about every 2 km of new road, kept for 30 days). In some layouts the street name only appears once the map is zoomed in far
 enough to show street names.
 
 Where it shows: Duo and Lap under the map or compass, Classic and Twin beside the compass, Modern, Sport and Cockpit over
-the top of the map, Open over the road animation. While Google Maps or Waze is navigating, the **next turn** (arrow,
-distance, instruction) takes its place.
+the top of the map, Open over the road animation. In Classic and Classic Light the speed-breaker status sits after the
+mph reading at the bottom left instead. While Google Maps or Waze is navigating, the **next turn** (arrow, distance,
+remaining distance and arrival time) takes its place.
 
 ## 7. Map
 
