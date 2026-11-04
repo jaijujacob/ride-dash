@@ -4,7 +4,7 @@ title: Ride-Dash user manual
 
 # Ride-Dash user manual
 
-_Version 1.8.0 · November 2026_
+_Version 1.9.0 · November 2026_
 
 Ride-Dash turns the phone in your holder — or your car's Android head unit — into a calm, complete car dashboard:
 live speed, gear, heading and altitude, the road you are on and its speed limit, trip statistics, terrain, speed
@@ -13,13 +13,24 @@ works on the device; no account needed.
 
 ![Ride-Dash in the Duo layout](images/manual/duo_white_driving_1600x720.png)
 
-**Contents:** [What's new](#whats-new-in-160) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
+**Contents:** [What's new](#whats-new-in-190) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
 [3 The dashboard](#3-the-dashboard) · [4 Layouts and colours](#4-layouts-and-colours) · [5 Speed and speed limits](#5-speed-and-speed-limits) ·
 [6 Driving mode, terrain and road info](#6-driving-mode-terrain-and-road-info) · [7 Map](#7-map) ·
 [8 Places on the map](#8-places-on-the-map) · [9 Music](#9-music) · [10 Trips](#10-trips) ·
 [11 Breaks](#11-break-reminder) · [12 Speed breakers](#12-speed-breakers) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
+
+## What's new in 1.9.0
+
+- **Street names everywhere:** the road you are on now updates on every layout and on older head units too; Classic
+  and Twin show it on small screens as well, and an old name no longer stays on screen after you have moved on
+  (section 6).
+- **Navigation:** the route is a pale blue line with a thin grey edge, the part already driven grey; starting a route
+  brings the map back to your car. The next-turn card over the map has no black box any more (section 7).
+- **Routing limit:** when the shared routing key's daily limit is used up, Ride-Dash explains how to get a free key of
+  your own; **Test key** in *Settings › Map › Navigation* checks it (section 7).
+- **Look:** speed and trip digits are a little bolder; GPS, Settings and Power line up with the frame on the right.
 
 ## What's new in 1.8.0
 
@@ -230,10 +241,10 @@ precisely; head units use GPS height. The trip log shows how much of each trip w
 - the **next speed breaker** on your road ("Hump in 350 m" up to 2 km ahead, or "No humps ahead"), when speed breaker
   alerts are on.
 
-The street name comes from the map itself, so it needs no extra data. It keeps the current road at junctions instead
-of flickering. On older head units that show the picture-tile map, it comes from the same map data in the background
-(a small download about every 2 km of new road, kept for 30 days). In some layouts the street name only appears once the map is zoomed in far
-enough to show street names.
+The street name comes from map data loaded in the background (a small download about every 2 km of new road, kept for
+30 days), the same on every layout and device, whatever the map's zoom. It keeps the current road at junctions instead
+of flickering, and disappears after about 50 m when it can't be confirmed (no internet in a new area) rather than
+showing an old road.
 
 Where it shows: Duo and Lap under the map or compass, Classic and Twin beside the compass, Modern, Sport and Cockpit over
 the top of the map, Open over the road animation. In Classic and Classic Light the speed-breaker status sits after the
@@ -262,7 +273,8 @@ remaining distance and arrival time) takes its place.
 mall* or *MG Road Kochi*) and press Search. Places near you are listed first, each with how far away it is; tap one for
 the same "Navigate to …?" question.
 
-**Navigating on the Ride-Dash map.** After **Navigate** the route appears as a line on the map, and the dashboard's
+**Navigating on the Ride-Dash map.** After **Navigate** the route appears as a pale blue line on the map with a
+red pin at the destination (the part already driven turns grey), and the dashboard's
 turn display shows the next turn with its arrow, the distance to it, the distance left and your arrival time. The turns
 are spoken ("In 300 metres, turn right onto MG Road") about 500 m and 150 m before the turn (earlier at higher speed)
 and at the turn, and "You have arrived at …" at the end. If you take another road, Ride-Dash works out a new route
@@ -270,8 +282,10 @@ from where you are. The **✕ button** on the map stops navigating.
 
 Routes and searches come from GraphHopper over the internet; only the start, the destination and the search text are
 sent. Ride-Dash has a shared key whose daily limit all users share — for a key of your own (free), see
-*Settings › Map › Navigation* and **Get a free key at graphhopper.com**. Without any key, **Navigate** opens Google
-Maps as before.
+*Settings › Map › Navigation* and **Get a free key at graphhopper.com**. Paste it into **GraphHopper API key** and tap
+**Test key**: it shows whether the key works and how many credits are left today. Your key is stored encrypted on the
+device and is not included in backups. When the shared key's daily limit is used up, Ride-Dash says so once and offers
+**Open Settings**. Without any key, **Navigate** opens Google Maps as before.
 
 ![Navigate to a long-pressed place](images/manual/duo_white_navigate_1600x720.png)
 
@@ -444,7 +458,7 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
 | No song title | Allow *Music controls & track info* (Settings › Launcher & apps). Bluetooth music on some head units never sends titles; the buttons still work. |
 | No voice | *Settings › Trip & speed › Voice alerts › Test*. If it says there's no engine, install one (section 13). Check the media volume. |
 | No speed-limit sign | Most smaller roads have no limit in OpenStreetMap yet; the sign shows only where one is mapped. The first download in an area needs internet. Is *Road speed limits* on? |
-| No street name | Phones and newer units only (not the picture-tile map of older head units). Zoom the map in a step. |
+| No street name | The first time in an area it needs internet (phone hotspot on head units). Unnamed roads show none. |
 | A place type missing on the map | Tick it in *Settings › Map › Map points of interest*; zoom in — some show only close up. |
 | No speed breaker alerts | Is the setting on? Are you above 15 km/h? The hump may not be in OpenStreetMap — mark it with the hump button. The first download needs internet. |
 | Map is blank | The map needs internet the first time in an area (phone hotspot on head units). |
