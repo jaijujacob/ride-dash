@@ -4,7 +4,7 @@ title: Ride-Dash privacy policy
 
 # Ride-Dash — Privacy Policy
 
-_Last updated: 3 November 2026_
+_Last updated: 4 November 2026_
 
 Ride-Dash is a car dashboard and home-screen launcher. It has no user accounts, no analytics, no advertising and
 no server of its own.
@@ -34,9 +34,9 @@ counting the trip while another app is on top. Ride-Dash does not request backgr
   ATMs, hospitals…) for about 5 km around you are taken from MapTiler's map tiles for that area (the same service that
   supplies the map), or — if that fails — from the Overpass API (approximate position, rounded to about 1 km; only for
   areas not downloaded in the last 30 days; kept on your device). Turn off Settings › Map › Show places to stop it.
-- **Street names on older head units:** on units that show the picture-tile map, the name of the road you are on is
-  read from MapTiler's map tiles for the area around you (the same tiles as the places; one small tile about every 2 km
-  of new road; kept on your device for 30 days). Nothing about the name or your route is sent anywhere.
+- **Street names:** the name of the road you are on is read from MapTiler's map tiles for the area around you, on
+  every device and map style (the same tiles as the places on older head units; one small tile about every 2 km of new
+  road; kept on your device for 30 days). Nothing about the name or your route is sent anywhere.
 - **Voice alerts:** spoken by your device's own text-to-speech engine; Ride-Dash sends nothing for them.
 - **Map tiles:** the map downloads map images for the area on screen from the
   [MapTiler](https://www.maptiler.com/) (Classic map style; tiles made from OpenStreetMap data) or
@@ -52,6 +52,9 @@ counting the trip while another app is on top. Ride-Dash does not request backgr
   installed). Nothing is sent unless you confirm.
 - **Place search:** the text you type in the map's search box and your current position (to list nearby places first)
   are sent to GraphHopper when you press Search. Ride-Dash keeps neither the searches nor the routes.
+- **Your own GraphHopper key (optional):** a key you enter in Settings › Map › Navigation is stored encrypted on your
+  device (not in backups) and sent only to GraphHopper with your routes and searches. **Test key** sends just the key
+  to GraphHopper to check it and show the credits left today.
 - **Sights on the map** (viewpoints, monuments and similar) come from the same map data; no extra data is sent.
 
 ## Notifications and media
