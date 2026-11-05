@@ -4,7 +4,7 @@ title: Ride-Dash user manual
 
 # Ride-Dash user manual
 
-_Version 1.9.0 · November 2026_
+_Version 1.9.1 · November 2026_
 
 Ride-Dash turns the phone in your holder — or your car's Android head unit — into a calm, complete car dashboard:
 live speed, gear, heading and altitude, the road you are on and its speed limit, trip statistics, terrain, speed
@@ -13,13 +13,23 @@ works on the device; no account needed.
 
 ![Ride-Dash in the Duo layout](images/manual/duo_white_driving_1600x720.png)
 
-**Contents:** [What's new](#whats-new-in-190) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
+**Contents:** [What's new](#whats-new-in-191) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
 [3 The dashboard](#3-the-dashboard) · [4 Layouts and colours](#4-layouts-and-colours) · [5 Speed and speed limits](#5-speed-and-speed-limits) ·
 [6 Driving mode, terrain and road info](#6-driving-mode-terrain-and-road-info) · [7 Map](#7-map) ·
 [8 Places on the map](#8-places-on-the-map) · [9 Music](#9-music) · [10 Trips](#10-trips) ·
 [11 Breaks](#11-break-reminder) · [12 Speed breakers](#12-speed-breakers) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
+
+## What's new in 1.9.1
+
+- **Driving insights:** tap the new **chart icon** at the top right while parked to see your distance, driving time, a
+  driving score, charts and tips for this week, this month or any period (section 10).
+- **Street name and next turn together:** during a route the road you are on stays on screen with the next turn, in every
+  layout (section 6).
+- **Voice alerts** say numbers properly: "three hundred metres", "one point five kilometres" (section 13).
+- **Classic and Classic Light:** larger street name and speed-breaker status, with the next turn on the other side of the
+  compass.
 
 ## What's new in 1.9.0
 
@@ -140,7 +150,7 @@ dashboard top, not inside the glovebox or under metal. Wait outdoors with the en
 | --- | --- |
 | Top left | Your logo and vehicle name; alerts appear here (break, speed breakers) |
 | Top centre | Time, weather, sunrise / sunset, battery, weekday and date |
-| Top right | GPS status, settings, power (end trip and exit) |
+| Top right | Driving insights, GPS status, settings, power (end trip and exit) |
 | Driving style | ECO · CITY · IDLE · SPORT — an icon and a coloured word |
 | Speedometer | Speed with colour zones; gear and rpm (estimated); the other unit nearby |
 | Compass and road | Heading, direction, altitude above sea level; the road animation moves with your speed |
@@ -248,8 +258,10 @@ showing an old road.
 
 Where it shows: Duo and Lap under the map or compass, Classic and Twin beside the compass, Modern, Sport and Cockpit over
 the top of the map, Open over the road animation. In Classic and Classic Light the speed-breaker status sits after the
-mph reading at the bottom left instead. While Google Maps or Waze is navigating, the **next turn** (arrow, distance,
-remaining distance and arrival time) takes its place.
+mph reading at the bottom left instead. While a route runs, the **next turn** (arrow, distance, remaining distance and
+arrival time) shows together with the street name, in place of terrain and the speed-breaker status. In Classic and Classic
+Light the street name stays beside the compass on the left and the next turn appears on its right; in Twin both are in
+the card over the map.
 
 ## 7. Map
 
@@ -339,6 +351,22 @@ YouTube Music, the radio app, Bluetooth audio.
 - The trip display shows **TRIP** (distance), **TIME** (moving time), **MAX** and **AVG** (moving average).
 - Trips shorter than 200 m or 1 minute are not kept.
 - *Settings › Trip & speed › Trip log* lists your trips; export them to Excel (section 16).
+
+### Driving insights
+
+The **chart icon** at the top right, left of the GPS status, opens a full-screen dashboard. It opens only while the car
+stands ("Available when stopped" otherwise) and closes by itself when you drive off. It works offline, from the trips on
+your device.
+
+- **Period:** this week, this month, the last 3 months, this year or a custom range. Totals show the change against the same
+  span of the period before.
+- **Charts:** distance, average speed, driving time by day and hour, driving mode, terrain, time in your speed zones, hard
+  events per 100 km, gear use (estimated from speed), break reminders and the score over time.
+- **Driving score:** 0 to 100, higher is better, for the period and each trip, from acceleration, braking, cornering, speed,
+  idling and breaks. A style (Smooth, Balanced, Spirited or Aggressive) says what costs the most points.
+- **Recommendations:** a few tips, only those that apply to your driving.
+
+Speed zones, time over the limit and breaks taken are recorded from version 1.9.1 on, so older trips are left out of those.
 
 ## 11. Break reminder
 
