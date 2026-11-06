@@ -374,11 +374,20 @@ your device.
 - **Driving score:** 0 to 100, higher is better, for the period and each trip, from acceleration, braking, cornering, speed,
   idling and breaks. A style (Smooth, Balanced, Spirited or Aggressive) says what costs the most points.
 - **Recommendations:** a few tips, only those that apply to your driving.
+![Driving insights, the summary](images/manual/insights_blue_dashboard_1600x720.png)
+
+![Driving insights, the charts](images/manual/insights_blue_charts_1600x720.png)
+
 - **Details:** tap any card or chart element to see the matching trips: the Max speed card shows that trip, a month's bar the
   trips of that month, the SPORT slice the trips with the most SPORT time, a heatmap cell the trips in that time slot. Tap a
   column heading to sort, **Clear** to see all trips of the period. Tap a trip for its route on the map, all its numbers, its
   speed over the trip and its driving mode and terrain. Older trips show no route once their route points are removed
   (*Keep route points for* in Settings › Trip & speed). **Back** returns to the chart you came from.
+
+![The trips behind a chart](images/manual/insights_blue_trips_1600x720.png)
+
+![A trip in detail](images/manual/insights_blue_trip_1600x720.png)
+
 
 Speed zones, time over the limit and breaks taken are recorded from version 1.9.1 on, so older trips are left out of those.
 
