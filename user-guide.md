@@ -4,7 +4,7 @@ title: Ride-Dash user manual
 
 # Ride-Dash user manual
 
-_Version 1.9.1 · November 2026_
+_Version 1.10.0 · November 2026_
 
 Ride-Dash turns the phone in your holder — or your car's Android head unit — into a calm, complete car dashboard:
 live speed, gear, heading and altitude, the road you are on and its speed limit, trip statistics, terrain, speed
@@ -20,6 +20,15 @@ works on the device; no account needed.
 [11 Breaks](#11-break-reminder) · [12 Speed breakers](#12-speed-breakers) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
+
+## What's new in 1.10.0
+
+- **Driving insights go deeper:** tap any card or chart to see the matching trips, sort them by any column, and open a trip
+  for its route on the map, speed over the trip and all its numbers (section 10).
+- **New look for the charts:** translucent, with rounded bars and glass cards, in every colour scheme.
+- **Larger clock text:** the date in Classic, Sport and Twin is as large as the temperature, and the time in Duo fills its
+  display.
+- **Map credit:** on the map's edge in Duo, and easier to read in Lap and Open.
 
 ## What's new in 1.9.1
 
@@ -365,6 +374,11 @@ your device.
 - **Driving score:** 0 to 100, higher is better, for the period and each trip, from acceleration, braking, cornering, speed,
   idling and breaks. A style (Smooth, Balanced, Spirited or Aggressive) says what costs the most points.
 - **Recommendations:** a few tips, only those that apply to your driving.
+- **Details:** tap any card or chart element to see the matching trips: the Max speed card shows that trip, a month's bar the
+  trips of that month, the SPORT slice the trips with the most SPORT time, a heatmap cell the trips in that time slot. Tap a
+  column heading to sort, **Clear** to see all trips of the period. Tap a trip for its route on the map, all its numbers, its
+  speed over the trip and its driving mode and terrain. Older trips show no route once their route points are removed
+  (*Keep route points for* in Settings › Trip & speed). **Back** returns to the chart you came from.
 
 Speed zones, time over the limit and breaks taken are recorded from version 1.9.1 on, so older trips are left out of those.
 
