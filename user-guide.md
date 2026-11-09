@@ -4,7 +4,7 @@ title: Ride-Dash user manual
 
 # Ride-Dash user manual
 
-_Version 1.10.1 · November 2026_
+_Version 1.11.0 · November 2026_
 
 Ride-Dash turns the phone in your holder — or your car's Android head unit — into a calm, complete car dashboard:
 live speed, gear, heading and altitude, the road you are on and its speed limit, trip statistics, terrain, speed
@@ -20,6 +20,13 @@ works on the device; no account needed.
 [11 Breaks](#11-break-reminder) · [12 Speed breakers](#12-speed-breakers) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
+
+## What's new in 1.11.0
+
+- **Backup and restore:** keep your trips, parking history, marked speed breakers and settings in one file, and restore
+  them on another phone or head unit (section 16).
+- **App updates inside the app** for copies installed from Google Play: *Settings › About › App updates*. Ride-Dash only
+  asks while the car stands.
 
 ## What's new in 1.10.1
 
@@ -497,6 +504,8 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
 | Launcher & apps | Default home app · start on boot | — · off |
 | Launcher & apps | Show app dock · dock apps | on · a few common apps |
 | Location | Track trip in background | on |
+| Trip & speed | Unit | Automatic (from your region) |
+| About | App updates (Google Play installs only): Check · weekly check by itself; downloads in the background, then *Restart to update*; asks only while the car stands | on |
 
 ## 16. Export, storage and deleting data
 
@@ -505,7 +514,13 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
   route points.
 - **Storage:** trip summaries are kept until you delete them; route points for 90 days (30 days, 1 year or forever),
   at most 50 MB.
-- **Backup:** export to Excel from time to time — your trips exist only on this device.
+- **Backup and restore:** *Settings › Trip & speed › Back up trip data* makes one file (`RideDash_backup_<date>.ridedash`)
+  with your trips and, as you choose, route points, parking history, the speed breakers you marked and your settings.
+  Save it (to Downloads, a USB stick or Google Drive) or share it. *Restore from a backup* shows what the file holds and
+  then **merges** (adds the trips that aren't on this device yet; nothing is doubled) or **replaces** the finished trips
+  here. Settings are restored only when you tick *Also restore settings*. Use it to move your trips between the phone and
+  the head unit, or to keep them safe before reinstalling. A damaged file, or one from a newer Ride-Dash, changes
+  nothing. The Excel export stays for looking at your trips; it can't be imported back.
 - **Delete:** *Delete all trip data* removes trips, routes and parking spots. Uninstalling removes everything.
 - Nothing is uploaded: see the [privacy policy](privacy-policy.html).
 
