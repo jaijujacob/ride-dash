@@ -4,7 +4,7 @@ title: Ride-Dash privacy policy
 
 # Ride-Dash — Privacy Policy
 
-_Last updated: 4 November 2026_
+_Last updated: 9 November 2026_
 
 Ride-Dash is a car dashboard and home-screen launcher. It has no user accounts, no analytics, no advertising and
 no server of its own.
@@ -68,6 +68,15 @@ on the device only and is not stored or transmitted.
 - Settings and images you upload (logo, car image, background) are stored only on the device.
 - Ride-Dash reads the list of installed apps to show the app drawer and dock; this list stays on the device.
 - No personal information (name, email, contacts, photos) is collected.
+- **Backup files:** *Back up trip data* writes a file with your trips (times, distances, the places they started and
+  ended, and route points if you include them), parking spots, the speed breakers you marked and, if you choose, your
+  settings. Ride-Dash creates it only when you ask and saves it only where you choose (or hands it to the app you pick to
+  share it); it doesn't send it anywhere itself. Your own GraphHopper key and your pictures are not included.
+- **App updates:** on copies installed from Google Play, Ride-Dash asks Google Play whether a newer version exists (when
+  you tap *Check* in Settings › About, and by itself about once a week) and, if you agree, Google Play downloads and
+  installs it. That exchange is between your device and Google Play under
+  [Google's privacy policy](https://policies.google.com/privacy); Ride-Dash adds nothing to it. Copies installed from
+  the APK file don't check.
 
 ## Children
 
