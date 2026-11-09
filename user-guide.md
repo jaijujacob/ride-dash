@@ -4,7 +4,7 @@ title: Ride-Dash user manual
 
 # Ride-Dash user manual
 
-_Version 1.10.0 · November 2026_
+_Version 1.10.1 · November 2026_
 
 Ride-Dash turns the phone in your holder — or your car's Android head unit — into a calm, complete car dashboard:
 live speed, gear, heading and altitude, the road you are on and its speed limit, trip statistics, terrain, speed
@@ -20,6 +20,12 @@ works on the device; no account needed.
 [11 Breaks](#11-break-reminder) · [12 Speed breakers](#12-speed-breakers) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
+
+## What's new in 1.10.1
+
+- **Units follow your region:** mph and feet in the US, the UK and other mph countries, km/h and metres elsewhere. Choose
+  yourself in *Settings › Trip & speed › Unit* (section 5). The temperature follows your region too.
+- **Trip table:** the units are in the column headings, so long speeds are no longer cut off.
 
 ## What's new in 1.10.0
 
@@ -210,7 +216,10 @@ You can also upload a background image, your logo and a picture of your car (*Se
 - The big number is your speed in your colour scheme; the needle, arc and speed bar change colour with speed:
   **green** below 50 km/h, **amber** from 50, **red** from 80, darkest red at 120. Change the limits in
   *Settings › Trip & speed › Speed colours*.
-- The other unit (mph or km/h) is shown smaller. Switch the main unit in *Settings › Trip & speed › Unit*.
+- The other unit (mph or km/h) is shown smaller. The main unit is **Automatic** at first: mph in the US, the UK and
+  other countries that sign speeds in mph, km/h everywhere else. Choose km/h or mph yourself in *Settings › Trip & speed
+  › Unit*. Every speed and distance follows it: the dashboard, speed-breaker and turn distances (feet below a tenth of a
+  mile), the voice, driving insights and the Excel export. The temperature follows your region (°F in the US).
 
 **Road speed limit.** Where OpenStreetMap knows the speed limit of the road you are driving, a round sign shows it on
 the map (in Lap beside the driving style). Ride-Dash picks the road you are driving along, so a side road you cross
