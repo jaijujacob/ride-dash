@@ -13,13 +13,23 @@ works on the device; no account needed.
 
 ![Ride-Dash in the Duo layout](images/manual/duo_white_driving_1600x720.png)
 
-**Contents:** [What's new](#whats-new-in-191) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
+**Contents:** [What's new](#whats-new-in-1120) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
 [3 The dashboard](#3-the-dashboard) · [4 Layouts and colours](#4-layouts-and-colours) · [5 Speed and speed limits](#5-speed-and-speed-limits) ·
 [6 Driving mode, terrain and road info](#6-driving-mode-terrain-and-road-info) · [7 Map](#7-map) ·
 [8 Places on the map](#8-places-on-the-map) · [9 Music](#9-music) · [10 Trips](#10-trips) ·
 [11 Breaks](#11-break-reminder) · [12 Speed breakers](#12-speed-breakers) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
+
+## What's new in 1.12.0
+
+- **Describe your vehicle:** fuel, gearbox (manual, AMT, automatic, DCT, CVT, EV), engine size and tyres in *Settings ›
+  Vehicle* make the estimated gear and rpm much closer to a real car's; calibrate the rpm with one reading from your own
+  dashboard. Save several vehicles; trips remember which one you drove, and insights can show one vehicle (section 3).
+- **Witty voice alerts:** choose *Alert style › Witty* for light-hearted alerts that still say the important part first
+  (section 13).
+- **Units in every voice alert:** "fifty miles per hour", "four hundred feet" — and the speed-breaker alert now says how far
+  away it is.
 
 ## What's new in 1.11.0
 
@@ -184,6 +194,36 @@ dashboard top, not inside the glovebox or under metal. Wait outdoors with the en
 
 The arrangement differs per layout, but every layout has the same pieces.
 
+### Gear and rpm are estimated
+
+Ride-Dash has no connection to the engine. **RPM and gear are simulated from GPS speed and acceleration, assuming ideal
+conditions. They are not read from the vehicle and may differ from your actual dashboard. Use them as an indication
+only, not for driving decisions.**
+
+Describe your vehicle in *Settings › Vehicle › Engine & gearbox*: fuel (petrol, diesel, CNG, hybrid, EV), transmission
+(4–6-speed manual or iMT, 5/6-speed AMT, 5–7-speed automatic, 6/7-speed DCT, CVT; an EV gets its single-speed reduction by
+itself), engine capacity and turbo or not, tyre size, idle and redline (filled in from the fuel and engine; you can change
+them). *Advanced* has the gear ratios and final drive — typical values for the gearbox, or the real ones from your
+vehicle's spec sheet — and **RPM calibration**: drive steadily in top gear, enter the speed and the rpm your dashboard
+shows, and Ride-Dash corrects for tyre wear and a different final drive. You can save several vehicles (*Add vehicle*,
+give each a name); every trip records the vehicle in use, and *Driving insights* can show one vehicle at a time.
+
+How it is worked out: engine rpm = wheel turns per minute (speed ÷ the tyre's rolling circumference) × gear ratio × final
+drive × calibration. The gear is chosen like a typical driver: diesels shift earlier than petrol engines, small engines
+later, harder acceleration and climbs hold a gear longer, downhill allows a higher one; a gear is held at least 2 seconds.
+Automatics show D3 and D when standing, with some torque-converter slip at low speed; a CVT keeps the rpm in a band; an EV
+shows the motor rpm (0 when stopped); a hybrid shows **EV** at low speed with light throttle.
+
+Why it can differ from your dashboard:
+
+- GPS speed lags and wobbles, especially at low speed, in tunnels and under trees.
+- Your actual gear choice and clutch / throttle use are unknown.
+- Tyre wear, tyre pressure and load change the rolling radius by 2–3 %.
+- Wheel slip, gradient, load and how your gearbox really shifts (torque-converter slip, AMT / DCT logic) vary by vehicle.
+- Typical gear ratios differ from your vehicle's unless you enter them from the spec sheet.
+
+Real rpm and gear would need an OBD-II adapter — possibly a future feature.
+
 ## 4. Layouts and colours
 
 *Settings › Appearance.* Pick a **layout** (the arrangement) and a **colour scheme** (the colours) separately.
@@ -231,7 +271,7 @@ You can also upload a background image, your logo and a picture of your car (*Se
 **Road speed limit.** Where OpenStreetMap knows the speed limit of the road you are driving, a round sign shows it on
 the map (in Lap beside the driving style). Ride-Dash picks the road you are driving along, so a side road you cross
 doesn't take over. Above the limit plus your **tolerance** (+0, +5 or +10 km/h; default +5) the number on the sign
-turns red, the drive mode shows **SLOW DOWN** and, with voice alerts, you hear "Slow down. Speed limit 60."
+turns red, the drive mode shows **SLOW DOWN** and, with voice alerts, you hear "Slow down. Speed limit sixty kilometres per hour."
 
 ![Speed limit](images/manual/duo_white_speed-limit_1600x720.png)
 
@@ -386,7 +426,8 @@ your device.
 - **Period:** this week, this month, the last 3 months, this year or a custom range. Totals show the change against the same
   span of the period before.
 - **Charts:** distance, average speed, driving time by day and hour, driving mode, terrain, time in your speed zones, hard
-  events per 100 km, gear use (estimated from speed), break reminders and the score over time.
+  events per 100 km, gear use (estimated — see section 3), break reminders and the score over time. With trips of two or more
+  saved vehicles, a row of chips shows one vehicle at a time.
 - **Driving score:** 0 to 100, higher is better, for the period and each trip, from acceleration, braking, cornering, speed,
   idling and breaks. A style (Smooth, Balanced, Spirited or Aggressive) says what costs the most points.
 - **Recommendations:** a few tips, only those that apply to your driving.
@@ -419,7 +460,7 @@ map — and is spoken. Tap it to snooze for 15 minutes. Short stops pause the ti
 ## 12. Speed breakers
 
 **Humps ahead · 150 m** appears in red at the top left before a speed breaker on the road ahead, about 9 seconds
-early at your speed (80–300 m), and you hear "Speed breaker ahead". Only humps on the road you are driving count —
+early at your speed (80–300 m), and you hear "Speed breaker ahead, in two hundred metres". Only humps on the road you are driving count —
 not those on side roads or behind you. A group of humps close together gives one alert; nothing below 15 km/h. The
 banner clears once you're past.
 
@@ -446,12 +487,19 @@ OpenStreetMap can't be deleted (they are fixed in OpenStreetMap itself).
 Spoken through the car speakers like navigation (music gets quieter, then comes back):
 
 - "You've been driving for two and a half hours. Time for a break." (your configured time)
-- "Slow down. Speed limit 60." after 3 seconds above the road's limit plus your tolerance (or the red speed colour where
+- "Slow down. Speed limit sixty kilometres per hour." (miles per hour with miles selected) after 3 seconds above the road's limit plus your tolerance (or the red speed colour where
   no limit is mapped); again only after slowing 5 km/h below it, at most once a minute.
-- "Speed breaker ahead."
-- Turns while navigating on the Ride-Dash map: "In 300 metres, turn right onto MG Road", "You have arrived at …".
+- "Speed breaker ahead, in two hundred metres." (feet or miles with miles selected)
+- Turns while navigating on the Ride-Dash map: "In three hundred metres, turn right onto MG Road" (feet / miles with miles selected), "You have arrived at …".
 
 *Settings › Trip & speed › Voice alerts:* on/off, a switch per alert, and **Test**.
+
+**Alert style: Witty.** Prefer a bit of humour? Choose **Witty** under *Alert style*. The important part still comes
+first ("Speed limit sixty kilometres per hour. Easy there, racer.", "Speed breaker ahead in two hundred metres. Brace
+for the bump."), each alert picks one of several lines, and Ride-Dash also speaks up at a few extra moments: when you
+stay too fast (and says thanks when you slow down), after a snoozed break reminder, for several speed breakers in a row,
+after a hard stop, when you have been standing for two minutes, on a ghat road, when a trip starts and ends (parking
+spot saved), and when GPS still has no fix a minute after start-up. **Test witty voice** plays a random line.
 
 **No voice on a head unit?** Many units have no text-to-speech engine. Settings then says so, and alerts beep instead.
 To get voices: install **Speech Services by Google** (Play Store, or its APK on units without Play), open *Android
@@ -480,8 +528,9 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
 | Appearance | Background image | none |
 | Vehicle | Vehicle title | Ride-Dash |
 | Vehicle | Brand logo · car image | app icon · none |
-| Vehicle | Engine & gearbox preset (for gear / rpm) | Diesel SUV · 5-speed manual |
-| Vehicle | Tyre size, gear ratios, final drive, idle, redline, automatic | from the preset |
+| Vehicle | Saved vehicles (name; trips record the one in use) | one, "My vehicle" |
+| Vehicle | Preset, fuel, transmission, engine capacity, aspiration (for gear / rpm) | Diesel SUV · 5-speed manual |
+| Vehicle | Tyre size, idle, redline; Advanced: gear ratios, final drive, rpm calibration | from the preset |
 | Trip & speed | End trip after stopped for | 5 min |
 | Trip & speed | Break reminder · remind after · break length · alert sound | on · 2.5 h · 15 min · off |
 | Trip & speed | Cruising above | 60 km/h (highway 90) |
@@ -518,7 +567,8 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
   with your trips and, as you choose, route points, parking history, the speed breakers you marked and your settings.
   Save it (to Downloads, a USB stick or Google Drive) or share it. *Restore from a backup* shows what the file holds and
   then **merges** (adds the trips that aren't on this device yet; nothing is doubled) or **replaces** the finished trips
-  here. Settings are restored only when you tick *Also restore settings*. Use it to move your trips between the phone and
+  here. Settings — including your saved vehicles — are restored only when you tick *Also restore settings*; the vehicles
+  here are then replaced by the ones in the backup. Use it to move your trips between the phone and
   the head unit, or to keep them safe before reinstalling. A damaged file, or one from a newer Ride-Dash, changes
   nothing. The Excel export stays for looking at your trips; it can't be imported back.
 - **Delete:** *Delete all trip data* removes trips, routes and parking spots. Uninstalling removes everything.
