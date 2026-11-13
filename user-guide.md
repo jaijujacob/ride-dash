@@ -21,6 +21,14 @@ works on the device; no account needed.
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
 
+## What's new in 1.13.0
+
+- **Portrait redesigned:** mount the phone upright and choose *Portrait* in *Settings › Display › Orientation* for a
+  design made for it: speed, compass, trip display, a full-width map and music on one screen, the same for every layout,
+  with the phone's battery under the driving style (section 4).
+- **The vehicle on every trip:** Driving insights shows which vehicle a trip was driven with: on the latest trips, as a
+  column in the trip tables and on the trip's page (section 10).
+
 ## What's new in 1.12.0
 
 - **Describe your vehicle:** fuel, gearbox (manual, AMT, automatic, DCT, CVT, EV), engine size and tyres in *Settings ›
@@ -258,6 +266,14 @@ You can also upload a background image, your logo and a picture of your car (*Se
 
 ![Duo in Blue](images/manual/duo_blue_driving_1600x720.png)
 
+**Phone upright?** Choose *Portrait* (or *Auto rotate*) in *Settings › Display › Orientation*. Portrait has its own design,
+the same whichever layout you picked, in your colour scheme: the speed with gear and rpm next to the compass and road,
+the trip display, the map from edge to edge, and the music controls at the bottom. The top line shows the time and weather
+on the left and the day and date on the right; the phone's battery percentage is under the driving style (ECO).
+
+<img src="images/manual/portrait_white_driving_720x1600.png" alt="Portrait" width="260">
+<img src="images/manual/portrait_light_white_driving_720x1600.png" alt="Portrait with a light layout" width="260">
+
 ## 5. Speed and speed limits
 
 - The big number is your speed in your colour scheme; the needle, arc and speed bar change colour with speed:
@@ -428,6 +444,8 @@ your device.
 - **Charts:** distance, average speed, driving time by day and hour, driving mode, terrain, time in your speed zones, hard
   events per 100 km, gear use (estimated — see section 3), break reminders and the score over time. With trips of two or more
   saved vehicles, a row of chips shows one vehicle at a time.
+- **Vehicle:** the *Latest trips* card, the trip tables (column **Vehicle**, which you can sort by) and a trip's own page
+  show the vehicle it was driven with. Trips recorded before version 1.12.0 have none.
 - **Driving score:** 0 to 100, higher is better, for the period and each trip, from acceleration, braking, cornering, speed,
   idling and breaks. A style (Smooth, Balanced, Spirited or Aggressive) says what costs the most points.
 - **Recommendations:** a few tips, only those that apply to your driving.
@@ -544,7 +562,7 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
 | Map | Map style | Classic |
 | Map | Show places · heading-up · next-turn card | on · on · on |
 | Map | Map points of interest | essentials, vehicle, restaurants, hotels, rest areas, viewpoints (section 8) |
-| Display | Orientation | Landscape |
+| Display | Orientation: Landscape, Portrait or Auto rotate (portrait has its own design, the same for every layout, in your colours) | Landscape |
 | Display | 24-hour clock · driving mode indicator · logo at start-up | on · on · on |
 | Display | Full screen | on |
 | Display | Keep screen on | While driving / charging |
