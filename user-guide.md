@@ -13,13 +13,21 @@ works on the device; no account needed.
 
 ![Ride-Dash in the Duo layout](images/manual/duo_white_driving_1600x720.png)
 
-**Contents:** [What's new](#whats-new-in-1120) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
+**Contents:** [What's new](#whats-new-in-1131) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
 [3 The dashboard](#3-the-dashboard) · [4 Layouts and colours](#4-layouts-and-colours) · [5 Speed and speed limits](#5-speed-and-speed-limits) ·
 [6 Driving mode, terrain and road info](#6-driving-mode-terrain-and-road-info) · [7 Map](#7-map) ·
 [8 Places on the map](#8-places-on-the-map) · [9 Music](#9-music) · [10 Trips](#10-trips) ·
 [11 Breaks](#11-break-reminder) · [12 Speed breakers](#12-speed-breakers) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
+
+## What's new in 1.13.1
+
+- **Rpm display in portrait:** a row of rising bars above the speed lights up with the estimated rpm, red in the redline
+  part; gear and rpm sit on two lines above its right end (section 4).
+- **Portrait tidied up:** the trip readouts span the full width, the distance left and arrival time of a route are larger,
+  the speed-limit sign is small and at the map's top left (clear of the map buttons), and the start-up logo fits the screen.
+- **Speed bar:** runs from green through amber to a clear red on every layout.
 
 ## What's new in 1.13.0
 
@@ -268,8 +276,11 @@ You can also upload a background image, your logo and a picture of your car (*Se
 
 **Phone upright?** Choose *Portrait* (or *Auto rotate*) in *Settings › Display › Orientation*. Portrait has its own design,
 the same whichever layout you picked, in your colour scheme: the speed with gear and rpm next to the compass and road,
-the trip display, the map from edge to edge, and the music controls at the bottom. The top line shows the time and weather
-on the left and the day and date on the right; the phone's battery percentage is under the driving style (ECO).
+the trip display across the full width, the map from edge to edge, and the music controls at the bottom. The top line shows
+the time and weather on the left and the day and date on the right; the phone's battery percentage is under the driving
+style (ECO). Above the speed a row of rising bars shows the estimated rpm (numbered in thousands, red in the redline part),
+with the gear and the rpm number above its right end. The street name, or the next turn with the distance left and the
+arrival time, is on the road under the compass; the road's speed limit is the small sign at the map's top left.
 
 <img src="images/manual/portrait_white_driving_720x1600.png" alt="Portrait" width="260">
 <img src="images/manual/portrait_light_white_driving_720x1600.png" alt="Portrait with a light layout" width="260">
