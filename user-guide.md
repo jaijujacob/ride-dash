@@ -21,6 +21,13 @@ works on the device; no account needed.
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
 
+## What's new in 1.14.0
+
+- **Switch vehicles from the dashboard:** press and hold the car in the middle of the compass and pick another of your
+  saved vehicles; gear and rpm follow at once (section 3).
+- **Voice on / off with one tap:** a speaker icon right of the speed bar silences every spoken alert and brings them
+  back, without changing your voice settings (section 13).
+
 ## What's new in 1.13.1
 
 - **Rpm display in portrait:** a row of rising bars above the speed lights up with the estimated rpm, red in the redline
@@ -201,12 +208,12 @@ dashboard top, not inside the glovebox or under metal. Wait outdoors with the en
 | Top right | Driving insights, GPS status, settings, power (end trip and exit) |
 | Driving style | ECO · CITY · IDLE · SPORT — an icon and a coloured word |
 | Speedometer | Speed with colour zones; gear and rpm (estimated); the other unit nearby |
-| Compass and road | Heading, direction, altitude above sea level; the road animation moves with your speed |
+| Compass and road | Heading, direction, altitude above sea level; the road animation moves with your speed. Press and hold the car to switch vehicles |
 | Road info | Street name, terrain with gradient, next speed breaker — or the next turn while navigating |
 | Trip display | Drive mode, terrain, distance, moving time, top and average speed |
 | Map | Where you are, heading up; the places you chose, speed breakers, your parked car; speed-limit sign |
 | Bottom left | **Hump button** (mark a speed breaker), music controls and track |
-| Bottom right | Speed bar and break (rest) bar — driving time, bar, coffee cup |
+| Bottom right | Speed bar with the **speaker** (voice alerts on / off) after it, and break (rest) bar — driving time, bar, coffee cup |
 
 The arrangement differs per layout, but every layout has the same pieces.
 
@@ -223,6 +230,12 @@ them). *Advanced* has the gear ratios and final drive — typical values for the
 vehicle's spec sheet — and **RPM calibration**: drive steadily in top gear, enter the speed and the rpm your dashboard
 shows, and Ride-Dash corrects for tyre wear and a different final drive. You can save several vehicles (*Add vehicle*,
 give each a name); every trip records the vehicle in use, and *Driving insights* can show one vehicle at a time.
+
+**Switching vehicles quickly:** press and hold the car in the middle of the compass. A small **Select vehicle** list
+shows your saved vehicles — the one in use has a tick. Tap another one and gear, rpm and the tachometer follow it
+straight away ("Vehicle: Swift"); it stays selected for later trips. *Manage vehicles* opens *Settings › Vehicle*; tap
+*Cancel* or outside the list to leave things as they are. You can switch during a trip: the trip is logged with the
+vehicle selected when it ends.
 
 How it is worked out: engine rpm = wheel turns per minute (speed ÷ the tyre's rolling circumference) × gear ratio × final
 drive × calibration. The gear is chosen like a typical driver: diesels shift earlier than petrol engines, small engines
@@ -522,6 +535,11 @@ Spoken through the car speakers like navigation (music gets quieter, then comes 
 - Turns while navigating on the Ride-Dash map: "In three hundred metres, turn right onto MG Road" (feet / miles with miles selected), "You have arrived at …".
 
 *Settings › Trip & speed › Voice alerts:* on/off, a switch per alert, and **Test**.
+
+**Speaker icon:** the speaker right of the speed bar turns all voice alerts off and on with one tap — a crossed-out,
+dimmed speaker means off. It is the same switch as *Voice alerts* in Settings; your other voice choices (which alerts,
+the alert style) stay as they are and apply again when you turn it back on. Turning it off also stops an alert that is
+being spoken, and the break reminder's *Alert sound* stays silent as well. Alerts on the screen keep working.
 
 **Alert style: Witty.** Prefer a bit of humour? Choose **Witty** under *Alert style*. The important part still comes
 first ("Speed limit sixty kilometres per hour. Easy there, racer.", "Speed breaker ahead in two hundred metres. Brace
