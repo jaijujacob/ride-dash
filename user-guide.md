@@ -4,7 +4,7 @@ title: Ride-Dash user manual
 
 # Ride-Dash user manual
 
-_Version 1.11.1 · November 2026_
+_Version 1.15.0 · November 2026_
 
 Ride-Dash turns the phone in your holder — or your car's Android head unit — into a calm, complete car dashboard:
 live speed, gear, heading and altitude, the road you are on and its speed limit, trip statistics, terrain, speed
@@ -13,13 +13,22 @@ works on the device; no account needed.
 
 ![Ride-Dash in the Duo layout](images/manual/duo_white_driving_1600x720.png)
 
-**Contents:** [What's new](#whats-new-in-1131) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
+**Contents:** [What's new](#whats-new-in-1150) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
 [3 The dashboard](#3-the-dashboard) · [4 Layouts and colours](#4-layouts-and-colours) · [5 Speed and speed limits](#5-speed-and-speed-limits) ·
 [6 Driving mode, terrain and road info](#6-driving-mode-terrain-and-road-info) · [7 Map](#7-map) ·
 [8 Places on the map](#8-places-on-the-map) · [9 Music](#9-music) · [10 Trips](#10-trips) ·
 [11 Breaks](#11-break-reminder) · [12 Speed breakers](#12-speed-breakers) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
+
+## What's new in 1.15.0
+
+- **Motorcycles and scooters:** set *Vehicle type* to *Motorcycle / scooter* in *Settings › Vehicle* for bike gearboxes
+  (4-, 5-, 6-speed or a scooter's CVT), engines from 50 cc, bike tyre sizes and gear / rpm that rev like a bike
+  (section 3).
+- **A bike in the compass** while a bike is in use, and car / bike icons in the *Select vehicle* list.
+- **Open layout:** gear and rpm on two lines, lined up with the mph readout.
+- The *Car image (back view)* upload is gone from *Settings › Vehicle*.
 
 ## What's new in 1.14.0
 
@@ -208,7 +217,7 @@ dashboard top, not inside the glovebox or under metal. Wait outdoors with the en
 | Top right | Driving insights, GPS status, settings, power (end trip and exit) |
 | Driving style | ECO · CITY · IDLE · SPORT — an icon and a coloured word |
 | Speedometer | Speed with colour zones; gear and rpm (estimated); the other unit nearby |
-| Compass and road | Heading, direction, altitude above sea level; the road animation moves with your speed. Press and hold the car to switch vehicles |
+| Compass and road | Heading, direction, altitude above sea level, with your vehicle seen from above — a car, or a motorcycle while a bike is in use; the road animation moves with your speed. Press and hold the vehicle to switch vehicles |
 | Road info | Street name, terrain with gradient, next speed breaker — or the next turn while navigating |
 | Trip display | Drive mode, terrain, distance, moving time, top and average speed |
 | Map | Where you are, heading up; the places you chose, speed breakers, your parked car; speed-limit sign |
@@ -231,11 +240,25 @@ vehicle's spec sheet — and **RPM calibration**: drive steadily in top gear, en
 shows, and Ride-Dash corrects for tyre wear and a different final drive. You can save several vehicles (*Add vehicle*,
 give each a name); every trip records the vehicle in use, and *Driving insights* can show one vehicle at a time.
 
-**Switching vehicles quickly:** press and hold the car in the middle of the compass. A small **Select vehicle** list
-shows your saved vehicles — the one in use has a tick. Tap another one and gear, rpm and the tachometer follow it
-straight away ("Vehicle: Swift"); it stays selected for later trips. *Manage vehicles* opens *Settings › Vehicle*; tap
+**Bikes and scooters:** set *Vehicle type* to *Motorcycle / scooter*. The lists then offer petrol or electric, a 4-, 5- or
+6-speed bike gearbox or a scooter's CVT, engine sizes from 50 cc (presets < 125 … 400+ cc), bike tyre sizes such as
+100/90-17 or 2.75-18 (enter the rear tyre), and a bike's higher idle and redline; shift points follow the redline. Presets:
+commuter bike 100 cc · 4-speed, bike 150 cc · 5-speed, sport bike 250 cc · 6-speed, scooter 110 cc · CVT. A bike's final
+drive (Advanced) is its primary reduction × the sprocket ratio. While a bike is in use, the compass shows a motorcycle seen
+from above instead of the car.
+
+![Settings › Vehicle with a bike](images/manual/settings_vehicle-bike_1600x720.png)
+
+![A bike in the compass](images/manual/classic_white_bike_1600x720.png)
+
+**Switching vehicles quickly:** press and hold the car (or bike) in the middle of the compass. A small **Select vehicle**
+list shows your saved vehicles — a car or a motorcycle icon, the name and a short summary; the one in use has a tick. Tap
+another one and gear, rpm and the tachometer follow it straight away ("Vehicle: City hatchback"); it stays selected for
+later trips. *Manage vehicles* opens *Settings › Vehicle*; tap
 *Cancel* or outside the list to leave things as they are. You can switch during a trip: the trip is logged with the
 vehicle selected when it ends.
+
+![Select vehicle](images/manual/duo_white_vehicles_1600x720.png)
 
 How it is worked out: engine rpm = wheel turns per minute (speed ÷ the tyre's rolling circumference) × gear ratio × final
 drive × calibration. The gear is chosen like a typical driver: diesels shift earlier than petrol engines, small engines
@@ -259,7 +282,7 @@ Real rpm and gear would need an OBD-II adapter — possibly a future feature.
 
 | Layout | The look |
 | --- | --- |
-| Open | Frameless: a huge digital speed and big trip readings |
+| Open | Frameless: a huge digital speed with gear over rpm beside it, and big trip readings |
 | Lap | Racing visor, speed inside the rpm arc |
 | Duo | GT cluster with a wide map |
 | Cockpit | One ring gauge in the middle |
@@ -283,7 +306,7 @@ Blue, Green, Red, Brown or Purple tint. The dials and displays stay dark, so eve
 map's land takes the same colour, a little darker. The light layouts — **Classic Light**, **Twin Light**, **Duo Light** and **Sport Light**, in their own *Light layouts* section at the top
 (the dark ones follow under *Dark layouts*) — start in the White colour scheme the first time you choose one, and have their own light background, light displays and a
 light map (the background setting doesn't apply there); every colour scheme works with it in a deeper shade.
-You can also upload a background image, your logo and a picture of your car (*Settings › Vehicle*).
+You can also upload a background image and your logo (*Settings › Vehicle*).
 
 ![Duo in Blue](images/manual/duo_blue_driving_1600x720.png)
 
@@ -574,9 +597,9 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
 | Appearance | Background colour · tint | black · Neutral |
 | Appearance | Background image | none |
 | Vehicle | Vehicle title | Ride-Dash |
-| Vehicle | Brand logo · car image | app icon · none |
+| Vehicle | Brand logo | app icon |
 | Vehicle | Saved vehicles (name; trips record the one in use) | one, "My vehicle" |
-| Vehicle | Preset, fuel, transmission, engine capacity, aspiration (for gear / rpm) | Diesel SUV · 5-speed manual |
+| Vehicle | Vehicle type (car or motorcycle / scooter), preset, fuel, transmission, engine capacity (50–8000 cc), aspiration (for gear / rpm) | Car · Diesel SUV · 5-speed manual |
 | Vehicle | Tyre size, idle, redline; Advanced: gear ratios, final drive, rpm calibration | from the preset |
 | Trip & speed | End trip after stopped for | 5 min |
 | Trip & speed | Break reminder · remind after · break length · alert sound | on · 2.5 h · 15 min · off |
