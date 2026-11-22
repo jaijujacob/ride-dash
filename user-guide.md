@@ -4,7 +4,7 @@ title: Ride-Dash user manual
 
 # Ride-Dash user manual
 
-_Version 1.15.0 · November 2026_
+_Version 1.16.0 · November 2026_
 
 Ride-Dash turns the phone in your holder — or your car's Android head unit — into a calm, complete car dashboard:
 live speed, gear, heading and altitude, the road you are on and its speed limit, trip statistics, terrain, speed
@@ -13,17 +13,35 @@ works on the device; no account needed.
 
 ![Ride-Dash in the Duo layout](images/manual/duo_white_driving_1600x720.png)
 
-**Contents:** [What's new](#whats-new-in-1150) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
+**Contents:** [What's new](#whats-new-in-1160) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
 [3 The dashboard](#3-the-dashboard) · [4 Layouts and colours](#4-layouts-and-colours) · [5 Speed and speed limits](#5-speed-and-speed-limits) ·
 [6 Driving mode, terrain and road info](#6-driving-mode-terrain-and-road-info) · [7 Map](#7-map) ·
 [8 Places on the map](#8-places-on-the-map) · [9 Music](#9-music) · [10 Trips](#10-trips) ·
-[11 Breaks](#11-break-reminder) · [12 Speed breakers](#12-speed-breakers) · [13 Voice alerts](#13-voice-alerts) ·
+[11 Breaks](#11-break-reminder) · [12 Speed breakers and road reports](#12-speed-breakers-and-road-reports) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
-[16 Export and storage](#16-export-storage-and-deleting-data) · [17 Troubleshooting](#17-troubleshooting)
+[16 Export and storage](#16-export-storage-and-deleting-data) · [17 Group ride](#17-group-ride) · [18 Troubleshooting](#18-troubleshooting)
+
+## What's new in 1.16.0
+
+- **Group ride:** friends riding or driving together see each other live on the map, get alerts ("Anu is 2 km behind")
+  and can call each other — join by link, QR code or a 6-character code, no account. Plan the ride in advance with stops,
+  a start time and stop durations in the arrival time; save plans to reuse (section 17).
+- **Report what you see:** the new **Report** button (red triangle, bottom left) marks speed cameras, red-light
+  cameras, traffic, potholes, road work, accidents, waterlogging, animals and other hazards with one tap — or tap the
+  **microphone** and just say it. Cameras from OpenStreetMap too. You're warned before them like before speed breakers
+  (section 12).
+- **Route planner with stops** on the full-screen map, saved routes (section 7).
+- **"Looks like you've stopped. End trip?"** before a trip ends (section 10).
+- **A more natural voice:** the best voice on your device is chosen for you; pick another, the speech rate and pitch in
+  Settings. Many more witty lines, never the same one twice in a row (section 13).
+- **Safety line at the trip start** by vehicle: seat belt for cars, helmet for bikes.
+- The map keeps your car in view when you switch to full screen or zoom; the full-screen map turns heading-up with a
+  compass button.
+- The **battery percent** shows under ECO whenever the bottom console has no room for it.
 
 ## What's new in 1.15.0
 
-- **Motorcycles and scooters:** set *Vehicle type* to *Motorcycle / scooter* in *Settings › Vehicle* for bike gearboxes
+- **Motorcycles and scooters:** set *Vehicle type* to *Motorcycle* or *Scooter* in *Settings › Vehicle* for bike gearboxes
   (4-, 5-, 6-speed or a scooter's CVT), engines from 50 cc, bike tyre sizes and gear / rpm that rev like a bike
   (section 3).
 - **A bike in the compass** while a bike is in use, and car / bike icons in the *Select vehicle* list.
@@ -240,11 +258,12 @@ vehicle's spec sheet — and **RPM calibration**: drive steadily in top gear, en
 shows, and Ride-Dash corrects for tyre wear and a different final drive. You can save several vehicles (*Add vehicle*,
 give each a name); every trip records the vehicle in use, and *Driving insights* can show one vehicle at a time.
 
-**Bikes and scooters:** set *Vehicle type* to *Motorcycle / scooter*. The lists then offer petrol or electric, a 4-, 5- or
+**Bikes and scooters:** set *Vehicle type* to *Motorcycle* or *Scooter*. The lists then offer petrol or electric, a 4-, 5- or
 6-speed bike gearbox or a scooter's CVT, engine sizes from 50 cc (presets < 125 … 400+ cc), bike tyre sizes such as
 100/90-17 or 2.75-18 (enter the rear tyre), and a bike's higher idle and redline; shift points follow the redline. Presets:
 commuter bike 100 cc · 4-speed, bike 150 cc · 5-speed, sport bike 250 cc · 6-speed, scooter 110 cc · CVT. A bike's final
-drive (Advanced) is its primary reduction × the sprocket ratio. While a bike is in use, the compass shows a motorcycle seen
+drive (Advanced) is its primary reduction × the sprocket ratio. On a motorcycle or scooter the voice reminds you to wear your helmet when a trip starts
+(a car or SUV: the seat belt), and break reminders talk about riding instead of driving. While a bike is in use, the compass shows a motorcycle seen
 from above instead of the car.
 
 ![Settings › Vehicle with a bike](images/manual/settings_vehicle-bike_1600x720.png)
@@ -393,7 +412,11 @@ the card over the map.
 
 ## 7. Map
 
-- **Heading-up:** the map turns with the car (north-up in *Settings › Map*).
+- **Heading-up:** the map turns with the car (north-up in *Settings › Map*); on the full-screen map the compass button
+  switches between heading-up and north-up.
+- **Following the car:** the map keeps the car in view. Drag it to look around; it comes back to the car 10 seconds after
+  you last touched it, or at once with the **re-centre** button. Switching between the dashboard and the full-screen map
+  keeps the car in view.
 - **Map style:** *Classic* (dark street map, default) or *Modern* (a crisper vector map, on devices whose graphics allow it).
 - **Places:** the places you choose (section 8). The places button on the map shows or hides them all.
 - **Full screen:** the expand button fills the screen with the map; Back returns.
@@ -419,6 +442,20 @@ turn display shows the next turn with its arrow, the distance to it, the distanc
 are spoken ("In 300 metres, turn right onto MG Road") about 500 m and 150 m before the turn (earlier at higher speed)
 and at the turn, and "You have arrived at …" at the end. If you take another road, Ride-Dash works out a new route
 from where you are. The **✕ button** on the map stops navigating.
+
+**Plan a route with stops.** On the full-screen map, the **route button** (top of the map's buttons) opens *Plan route*:
+
+- **Start:** your current location, or tap 🔍 to search a place or the map button and press and hold the map.
+- **Add stop:** as many as you like, by search or on the map. Drag a stop by its handle (☰) to change the order; **✕**
+  removes it. Tap a stop's round icon for its type: Breakfast, Lunch, Dinner, Tea break, Fuel, Halt, Sightseeing or
+  *Via point* (only shapes the route; nothing is said there).
+- **Destination:** by search or on the map.
+- The route appears on the map with the distance and the riding time (without halts); it is worked out again after each
+  change of place (one request, even when you move several stops).
+- **Start** navigates through the stops in order. A panel shows the next stop with its distance and arrival time. About
+  2 km before a stop the voice says, for example, "Lunch stop in two kilometres"; there, "You've reached …" and
+  **Continue** (or just drive off) goes on to the next stop. **Skip stop** leaves the next stop out.
+- **Save** keeps the route under a name; **Saved** lists your routes to start one again (✕ deletes it).
 
 Routes and searches come from GraphHopper over the internet; only the start, the destination and the search text are
 sent. Ride-Dash has a shared key whose daily limit all users share — for a key of your own (free), see
@@ -463,8 +500,8 @@ The music panel shows the playing track, a seek bar and large **previous / play-
 YouTube Music, the radio app, Bluetooth audio.
 
 - Needs *Music controls & track info* access (step 2). Without it the buttons still work.
-- **Head units:** Bluetooth music from your phone shows its title when the unit passes it on (AVRCP); some units keep
-  it to their own music app — the buttons still control playback.
+- **Head units:** the same as on a phone — the title shows when the music app shares it (its media session or
+  notification). Some head units' own Bluetooth music apps don't; the buttons still control playback.
 - The arrow at the left switches between the music panel and your favourite apps (*Settings › Launcher & apps ›
   Choose dock apps*).
 
@@ -472,10 +509,14 @@ YouTube Music, the radio app, Bluetooth audio.
 
 - A trip **starts by itself** after about 10 seconds above 7 km/h and 50 m moved — walking or GPS drift never starts
   one.
-- It **ends** after you have stood still for 5 minutes (*Settings › Trip & speed › End trip after stopped for*), or
-  with the power button (End trip & exit). Short stops at signals don't split a trip.
+- It **ends** when you stop: after 3 minutes standing still Ride-Dash asks **"Looks like you've stopped. End trip?"**
+  (spoken too, with voice alerts on). **End trip** ends it, **Keep going** waits another 10 minutes of stopping (a long
+  signal, a traffic jam), and no answer within a minute ends it by itself — also with the dashboard in the background.
+  At a planned stop of a group ride it waits until the stop's planned time is over. *Settings › Trip & speed › Ask before
+  ending trip* (off: the trip just ends after the stationary time) and *Stationary time before asking* (2, 3, 5 or
+  10 minutes). The power button (End trip & exit) ends it at once.
 - **Power cut or ignition off:** the trip is saved every few seconds; next time it is closed at its last saved point
-  and marked "auto (power off)" in the export.
+  and marked "auto (power off)" in the export (*Close a trip without GPS after*, 5 minutes).
 - The trip display shows **TRIP** (distance), **TIME** (moving time), **MAX** and **AVG** (moving average).
 - Trips shorter than 200 m or 1 minute are not kept.
 - *Settings › Trip & speed › Trip log* lists your trips; export them to Excel (section 16).
@@ -522,7 +563,7 @@ map — and is spoken. Tap it to snooze for 15 minutes. Short stops pause the ti
 
 ![Break alert](images/manual/duo_white_ghat-break-alert_1600x720.png)
 
-## 12. Speed breakers
+## 12. Speed breakers and road reports
 
 **Humps ahead · 150 m** appears in red at the top left before a speed breaker on the road ahead, about 9 seconds
 early at your speed (80–300 m), and you hear "Speed breaker ahead, in two hundred metres". Only humps on the road you are driving count —
@@ -535,10 +576,30 @@ banner clears once you're past.
 breakers within about 5 km of you (sending only a position rounded to about 1 km) and keeps them on the phone, so
 roads you have driven before work offline.
 
-**Map your own speed breakers.** Many Indian humps are not in OpenStreetMap yet. As you drive over one, tap the **hump
-button** (the red hump sign at the bottom left of the dashboard). It is saved at your position — "Speed breaker marked"
-confirms it — shows on the map as a sign, and alerts you like the others from then on. Your marks stay only on this
+**Map your own speed breakers.** Many Indian humps are not in OpenStreetMap yet. As you drive over one, tap the
+**Report** button (the red triangle at the bottom left of the dashboard) and then **Speed breaker**. It is saved at
+your position, shows on the map as a sign, and alerts you like the others from then on. Your marks stay only on this
 device.
+
+**Report other things on the road.** The same **Report** button has a large tile for each: **speed camera**, **red-light
+camera**, **traffic congestion**, **pothole / bad road**, **road work**, **accident**, **waterlogging**, **animal on road**
+and **other hazard**. One tap saves it where you are; each shows on the map with its own icon, and later you're warned
+before it on the road you drive — "Speed camera ahead · 200 m" at the top left, and spoken with voice alerts on.
+Cameras warn only in the direction you reported them. Speed breakers, cameras and potholes stay until you delete them;
+**traffic** clears after 1 hour, an **accident** after 3 hours, the others after 24 hours. Speed and red-light cameras
+mapped in OpenStreetMap are downloaded with the speed breakers and warn you too.
+
+- **Already there?** If the same kind of report is already within 30 m (50 m for traffic), or in OpenStreetMap, you hear
+  "Already marked nearby" and it is only marked as still there — nothing is doubled. The same report twice within
+  10 seconds is ignored.
+- **By voice:** tap the **microphone** next to Report and say what you see — "speed breaker", "hump", "camera", "red
+  light camera", "traffic", "jam", "pothole", "road work", "accident", "water", "cow on the road", "hazard". You hear
+  "Speed camera reported." or "Sorry, I didn't catch that." (tap again). It listens only for that one moment, using your
+  device's own speech recognition; the first tap asks for the microphone permission. Devices without speech
+  recognition (many head units) don't show the microphone.
+- Your reports stay **only on this device** (and in your backups); other drivers don't see them.
+- *Settings › Road alerts & reports:* for each kind, map icon / alert and voice on or off; **My reports** lists them with
+  **Delete** and **Merge duplicates**.
 
 **Remove one of yours:** press and hold it on the map → **Delete this speed breaker?** → **Delete**. Speed breakers from
 OpenStreetMap can't be deleted (they are fixed in OpenStreetMap itself).
@@ -557,7 +618,13 @@ Spoken through the car speakers like navigation (music gets quieter, then comes 
 - "Speed breaker ahead, in two hundred metres." (feet or miles with miles selected)
 - Turns while navigating on the Ride-Dash map: "In three hundred metres, turn right onto MG Road" (feet / miles with miles selected), "You have arrived at …".
 
-*Settings › Trip & speed › Voice alerts:* on/off, a switch per alert, and **Test**.
+*Settings › Trip & speed › Voice alerts:* on/off, a switch per alert, and **Test**. Road reports have their own voice
+switches (section 12).
+
+**Voice:** Ride-Dash picks the most natural voice on your device by itself — English (India) first, offline voices
+first, the highest quality. **Voice** lists the device's English voices, each with **Test**, to choose another;
+**Speech rate** (a little slower than normal by default, it sounds calmer) and **Pitch** adjust it. If only basic voices
+are installed, **Voice data** opens the download of better ones (free, they work offline).
 
 **Speaker icon:** the speaker right of the speed bar turns all voice alerts off and on with one tap — a crossed-out,
 dimmed speaker means off. It is the same switch as *Voice alerts* in Settings; your other voice choices (which alerts,
@@ -566,7 +633,8 @@ being spoken, and the break reminder's *Alert sound* stays silent as well. Alert
 
 **Alert style: Witty.** Prefer a bit of humour? Choose **Witty** under *Alert style*. The important part still comes
 first ("Speed limit sixty kilometres per hour. Easy there, racer.", "Speed breaker ahead in two hundred metres. Brace
-for the bump."), each alert picks one of several lines, and Ride-Dash also speaks up at a few extra moments: when you
+for the bump."), each alert picks one of eight or more lines — every one is used before any repeats, and
+never the same one twice in a row, and Ride-Dash also speaks up at a few extra moments: when you
 stay too fast (and says thanks when you slow down), after a snoozed break reminder, for several speed breakers in a row,
 after a hard stop, when you have been standing for two minutes, on a ghat road, when a trip starts and ends (parking
 spot saved), and when GPS still has no fix a minute after start-up. **Test witty voice** plays a random line.
@@ -599,9 +667,13 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
 | Vehicle | Vehicle title | Ride-Dash |
 | Vehicle | Brand logo | app icon |
 | Vehicle | Saved vehicles (name; trips record the one in use) | one, "My vehicle" |
-| Vehicle | Vehicle type (car or motorcycle / scooter), preset, fuel, transmission, engine capacity (50–8000 cc), aspiration (for gear / rpm) | Car · Diesel SUV · 5-speed manual |
+| Vehicle | Vehicle type (car, SUV, motorcycle or scooter), preset, fuel, transmission, engine capacity (50–8000 cc), aspiration (for gear / rpm) | Car · Diesel SUV · 5-speed manual |
 | Vehicle | Tyre size, idle, redline; Advanced: gear ratios, final drive, rpm calibration | from the preset |
-| Trip & speed | End trip after stopped for | 5 min |
+| Trip & speed | Ask before ending trip · stationary time before asking | on · 3 min |
+| Trip & speed | Close a trip without GPS after | 5 min |
+| Trip & speed | Voice · speech rate · pitch | Automatic · 0.95× · 1.0× |
+| Road alerts & reports | Map / voice per report type · my reports | all on |
+| Group ride | Your name and phone · alerts · stop durations | — · all on · 35 min per stop |
 | Trip & speed | Break reminder · remind after · break length · alert sound | on · 2.5 h · 15 min · off |
 | Trip & speed | Cruising above | 60 km/h (highway 90) |
 | Trip & speed | Unit | km/h |
@@ -634,7 +706,9 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
 - **Storage:** trip summaries are kept until you delete them; route points for 90 days (30 days, 1 year or forever),
   at most 50 MB.
 - **Backup and restore:** *Settings › Trip & speed › Back up trip data* makes one file (`RideDash_backup_<date>.ridedash`)
-  with your trips and, as you choose, route points, parking history, the speed breakers you marked and your settings.
+  with your trips and, as you choose, route points, parking history, the speed breakers you marked, your settings, your
+  saved routes and finished group rides (other riders' phone numbers only if you tick *Include member phone numbers*)
+  and your group ride name and phone. Restored group rides are history only; they never rejoin a group.
   Save it (to Downloads, a USB stick or Google Drive) or share it. *Restore from a backup* shows what the file holds and
   then **merges** (adds the trips that aren't on this device yet; nothing is doubled) or **replaces** the finished trips
   here. Settings — including your saved vehicles — are restored only when you tick *Also restore settings*; the vehicles
@@ -642,15 +716,62 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
   the head unit, or to keep them safe before reinstalling. A damaged file, or one from a newer Ride-Dash, changes
   nothing. The Excel export stays for looking at your trips; it can't be imported back.
 - **Delete:** *Delete all trip data* removes trips, routes and parking spots. Uninstalling removes everything.
-- Nothing is uploaded: see the [privacy policy](privacy-policy.html).
+- Nothing is uploaded, except what Group ride shares with your group while you're in one (section 17): see the
+  [privacy policy](privacy-policy.html).
+- Backups also hold, as you choose, your road reports and saved group ride plans.
 
-## 17. Troubleshooting
+## 17. Group ride
+
+Friends riding or driving together see each other live on the map, get alerts and can call each other. No account:
+you join by a link, a QR code or a 6-character code. All controls are on the **full-screen map** (the expand button);
+the dashboard's own map shows the riders as small coloured dots.
+
+**Create a group ride.** Group button on the full-screen map › **Create group ride** › **New plan** or **Use a saved
+plan**. Enter the ride name, your name and phone number (shown to the group so they can call you), then plan the ride:
+
+- **Start** (or your current location), **stops** and **destination**, as in the route planner (section 7). Each stop
+  can have a type, a planned time and a note ("Saravana Bhavan").
+- **Planned start** date and time.
+- **Stop durations:** every stop adds at least 35 minutes to the arrival time (via points nothing); − / + under a stop
+  makes it longer. The planner shows *riding time + stops = total*, the arrival time, and when you reach and leave each
+  stop. The default per kind of stop is in *Settings › Group ride › Stop durations*.
+- **Save plan** keeps it for next time; **Create group ride** shares it. A ride from a new plan is saved by itself.
+- **Use a saved plan** lists your plans (start → destination, stops, distance, last used). Picking one loads it for a
+  new date; changes stay in the ride unless you tap **Save plan › Update plan** (or **Save as new plan**). ⋮ on a plan
+  renames, duplicates, edits or deletes it.
+
+Then share the **QR code**, the **code** or the **link** (WhatsApp or any app).
+
+**Join.** Open the link (it opens Ride-Dash, or Google Play first), **Scan QR code**, **Scan from image** or **Enter code
+instead**, then **Join**. Members can join any time before the ride: until the leader starts, they show as *Joined*,
+see the plan and a countdown, and **no location is shared**. Everyone gets a reminder 30 minutes before; the leader
+another one at the planned start.
+
+**During the ride.** The leader taps **Start group ride**; from then on positions are shared (a notification shows it,
+**Stop** ends sharing). Everyone sees the riders with a heading arrow and name, the planned route and stops, the next
+stop with its distance and arrival time, and the destination's distance and arrival time (including the planned stop
+time). Tap a rider for **Call**, **WhatsApp** or **Follow on map**. Alerts appear at the top and are spoken: "Anu is 2 km
+behind", "… has stopped", "… has lost signal", "… reached the regroup point", "… reached the lunch stop", "… left the
+group ride" — switch each in *Settings › Group ride*. The leader can set a **regroup point** or **destination** by
+pressing and holding the map.
+
+**After the ride.** A summary shows the distance, time, members and planned vs actual start, distance and time at each
+stop. **Export this ride** (and *Settings › Trip & speed › Group rides › Export group rides*) writes an Excel file;
+other members' phone numbers only if you tick it.
+
+**Privacy.** Only your latest position is kept online; the group and everything in it are deleted when the leader ends
+it or 24 hours after the last activity. Create and join only while stopped. Group ride needs Google Play services and
+internet; it isn't shown on devices without them. Details: [privacy policy](privacy-policy.html).
+
+## 18. Troubleshooting
 
 | Problem | Try this |
 | --- | --- |
 | Speed stays `--`, "SEARCHING GPS" | Go outdoors; on head units check the GPS antenna can see the sky; wait a few minutes the first time. *Settings › Location* — is location allowed? |
 | Gauges slow to react after parking | Fixed in 1.3.0 — update. |
-| No song title | Allow *Music controls & track info* (Settings › Launcher & apps). Bluetooth music on some head units never sends titles; the buttons still work. |
+| No song title | Allow *Music controls & track info* (Settings › Launcher & apps). Some head units' Bluetooth music apps never share titles; the buttons still work. |
+| No microphone button | The device has no speech recognition (common on head units): use the Report button. |
+| No Group ride button | Group ride needs Google Play services; on head units without them it is hidden. |
 | No voice | *Settings › Trip & speed › Voice alerts › Test*. If it says there's no engine, install one (section 13). Check the media volume. |
 | No speed-limit sign | Most smaller roads have no limit in OpenStreetMap yet; the sign shows only where one is mapped. The first download in an area needs internet. Is *Road speed limits* on? |
 | No street name | The first time in an area it needs internet (phone hotspot on head units). Unnamed roads show none. |
