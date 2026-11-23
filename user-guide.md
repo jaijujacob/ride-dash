@@ -31,7 +31,11 @@ works on the device; no account needed.
   **microphone** and just say it. Cameras from OpenStreetMap too. You're warned before them like before speed breakers
   (section 12).
 - **Route planner with stops** on the full-screen map, saved routes (section 7).
-- **"Looks like you've stopped. End trip?"** before a trip ends (section 10).
+- **"Looks like you've stopped. End trip?"** before a trip ends — and afterwards Ride-Dash **closes itself** after a
+  30-second countdown with **Stay open** (section 10).
+- The **start-up animation** (logo and dial sweep) now plays only when Ride-Dash starts, not each time you come back to
+  it; choose Off / When the app starts / Every time in *Settings › Appearance*.
+- **Portrait:** the trip display has a thin outline and light dividers, like Classic.
 - **A more natural voice:** the best voice on your device is chosen for you; pick another, the speech rate and pitch in
   Settings. Many more witty lines, never the same one twice in a row (section 13).
 - **Safety line at the trip start** by vehicle: seat belt for cars, helmet for bikes.
@@ -170,7 +174,10 @@ works on the device; no account needed.
   worship and more — tick the ones you want, each with its own icon (section 8).
 - **Navigate to a long-pressed place** by name, also on older head units (section 7).
 - **Turn-by-turn without a box:** the next turn sits right on the dashboard in every layout.
-- **Start-up sweep:** the dials light up and sweep their needles once when Ride-Dash starts (tap to skip).
+- **Start-up animation:** the brand logo with the vehicle title, then the dials light up and sweep their needles once
+  (tap to skip the sweep). By default only when Ride-Dash starts after it was closed — not when you come back from
+  another app. *Settings › Appearance › Start-up animation*: Off / When the app starts / Every time (also when coming
+  back or switching the screen on).
 - **Every layout tidied up:** bigger maps that reach the frame, the driving style as an icon and coloured word, the
   rest bar with the coffee cup after it, rpm in the dial, cleaner info bars.
 - White is now the default colour scheme for new installs.
@@ -515,6 +522,12 @@ YouTube Music, the radio app, Bluetooth audio.
   At a planned stop of a group ride it waits until the stop's planned time is over. *Settings › Trip & speed › Ask before
   ending trip* (off: the trip just ends after the stationary time) and *Stationary time before asking* (2, 3, 5 or
   10 minutes). The power button (End trip & exit) ends it at once.
+- **The app closes itself** after a trip ended this way: **"Trip saved. Closing Ride-Dash in 30 seconds"** (spoken
+  too, with voice alerts on). **Stay open** keeps it running until the next trip has ended; touching the screen starts
+  the 30 seconds again. It stays open during a group ride (or one starting within 30 minutes), while navigating to a
+  destination and while a backup, import or export runs. *Settings › Trip & speed › Close app after trip ends* (on by
+  default). Once closed, Ride-Dash doesn't notice the next trip until it is opened again — on a head unit, *Start on
+  boot* opens it with the next ignition.
 - **Power cut or ignition off:** the trip is saved every few seconds; next time it is closed at its last saved point
   and marked "auto (power off)" in the export (*Close a trip without GPS after*, 5 minutes).
 - The trip display shows **TRIP** (distance), **TIME** (moving time), **MAX** and **AVG** (moving average).
@@ -664,12 +677,14 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
 | Appearance | Colour scheme · custom colour | White · none |
 | Appearance | Background colour · tint | black · Neutral |
 | Appearance | Background image | none |
+| Appearance | Start-up animation | When the app starts |
 | Vehicle | Vehicle title | Ride-Dash |
 | Vehicle | Brand logo | app icon |
 | Vehicle | Saved vehicles (name; trips record the one in use) | one, "My vehicle" |
 | Vehicle | Vehicle type (car, SUV, motorcycle or scooter), preset, fuel, transmission, engine capacity (50–8000 cc), aspiration (for gear / rpm) | Car · Diesel SUV · 5-speed manual |
 | Vehicle | Tyre size, idle, redline; Advanced: gear ratios, final drive, rpm calibration | from the preset |
 | Trip & speed | Ask before ending trip · stationary time before asking | on · 3 min |
+| Trip & speed | Close app after trip ends | on |
 | Trip & speed | Close a trip without GPS after | 5 min |
 | Trip & speed | Voice · speech rate · pitch | Automatic · 0.95× · 1.0× |
 | Road alerts & reports | Map / voice per report type · my reports | all on |
@@ -687,7 +702,7 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
 | Map | Show places · heading-up · next-turn card | on · on · on |
 | Map | Map points of interest | essentials, vehicle, restaurants, hotels, rest areas, viewpoints (section 8) |
 | Display | Orientation: Landscape, Portrait or Auto rotate (portrait has its own design, the same for every layout, in your colours) | Landscape |
-| Display | 24-hour clock · driving mode indicator · logo at start-up | on · on · on |
+| Display | 24-hour clock · driving mode indicator | on · on |
 | Display | Full screen | on |
 | Display | Keep screen on | While driving / charging |
 | Display | Night dimming · level | off · 40 % |
@@ -776,9 +791,10 @@ internet; it isn't shown on devices without them. Details: [privacy policy](priv
 | No speed-limit sign | Most smaller roads have no limit in OpenStreetMap yet; the sign shows only where one is mapped. The first download in an area needs internet. Is *Road speed limits* on? |
 | No street name | The first time in an area it needs internet (phone hotspot on head units). Unnamed roads show none. |
 | A place type missing on the map | Tick it in *Settings › Map › Map points of interest*; zoom in — some show only close up. |
-| No speed breaker alerts | Is the setting on? Are you above 15 km/h? The hump may not be in OpenStreetMap — mark it with the hump button. The first download needs internet. |
+| No speed breaker alerts | Is the setting on? Are you above 15 km/h? The hump may not be in OpenStreetMap — mark it with **Report › Speed breaker**. The first download needs internet. |
 | Map is blank | The map needs internet the first time in an area (phone hotspot on head units). |
-| Trip split in two | Raise *End trip after stopped for*. |
+| Trip split in two | Tap **Keep going** at the question, or raise *Stationary time before asking* (Settings › Trip & speed). |
+| Ride-Dash closed by itself after a trip | That's *Close app after trip ends* (Settings › Trip & speed); tap **Stay open** or switch it off. |
 | App won't install on a head unit | Free 100 MB, check Android 8+, copy the APK again; see section 1. |
 | The app closed by itself | *Settings › About › Last crash report › Share* and send it to ridedash.app@gmail.com. |
 
