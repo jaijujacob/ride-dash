@@ -4,7 +4,7 @@ title: Ride-Dash user manual
 
 # Ride-Dash user manual
 
-_Version 1.16.0 · November 2026_
+_Version 1.16.1 · November 2026_
 
 Ride-Dash turns the phone in your holder — or your car's Android head unit — into a calm, complete car dashboard:
 live speed, gear, heading and altitude, the road you are on and its speed limit, trip statistics, terrain, speed
@@ -13,13 +13,23 @@ works on the device; no account needed.
 
 ![Ride-Dash in the Duo layout](images/manual/duo_white_driving_1600x720.png)
 
-**Contents:** [What's new](#whats-new-in-1160) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
+**Contents:** [What's new](#whats-new-in-1161) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
 [3 The dashboard](#3-the-dashboard) · [4 Layouts and colours](#4-layouts-and-colours) · [5 Speed and speed limits](#5-speed-and-speed-limits) ·
 [6 Driving mode, terrain and road info](#6-driving-mode-terrain-and-road-info) · [7 Map](#7-map) ·
 [8 Places on the map](#8-places-on-the-map) · [9 Music](#9-music) · [10 Trips](#10-trips) ·
 [11 Breaks](#11-break-reminder) · [12 Speed breakers and road reports](#12-speed-breakers-and-road-reports) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Group ride](#17-group-ride) · [18 Troubleshooting](#18-troubleshooting)
+
+## What's new in 1.16.1
+
+- **Speed warnings only at real speed limits:** SLOW DOWN and the spoken warning now come only where OpenStreetMap has
+  a speed limit for the road you are on (plus your tolerance). Where no limit is mapped there is no warning — before,
+  Ride-Dash warned at your red speed colour or at 80 % of the speedometer (section 5).
+- **Cameras in Show places:** switch speed and red-light cameras on or off in *Settings › Map › Show places*, with the
+  other places (section 8).
+- On phones with a shorter screen (such as the Samsung S24) the map buttons stay in a column and the top icons sit
+  closer together; on car head units the speed in the other unit, ECO, battery and street name are larger.
 
 ## What's new in 1.16.0
 
@@ -364,8 +374,8 @@ turns red, the drive mode shows **SLOW DOWN** and, with voice alerts, you hear "
 
 ![Speed limit](images/manual/duo_white_speed-limit_1600x720.png)
 
-Where no limit is mapped — still many smaller roads in India — the sign is hidden and the old rule applies: SLOW DOWN
-at 80 % of the speedometer's scale, the voice at the red speed colour.
+Where no limit is mapped — still many smaller roads in India — the sign is hidden and there is no speed alert: no
+SLOW DOWN, no voice and no time over the limit in Driving insights.
 
 The limits are downloaded for about 5 km around you from OpenStreetMap (your position rounded to about 1 km) and kept
 on the device for 30 days. *Settings › Trip & speed › Speed limits:* on/off and the tolerance.
@@ -488,6 +498,7 @@ pressed spot is used. Press and hold one of **your own speed breakers** to delet
 | Food & rest | **Restaurants**, Cafés / tea shops, Fast food, **Hotels / motels / lodges**, **Rest areas** |
 | Travel | Railway stations, Bus stations, Airports |
 | Sightseeing | **Viewpoints / photo points**, Tourist attractions, Beaches, Waterfalls, Museums, Parks, Places of worship, Cinemas |
+| Cameras | **Speed camera**, **Red-light camera** |
 
 ![Map points of interest](images/manual/settings_map-places_1600x720.png)
 
@@ -495,7 +506,9 @@ pressed spot is used. Press and hold one of **your own speed breakers** to delet
   religion.
 - To keep the map calm, only a few icons show when zoomed out — essentials first — and food appears once you zoom in to
   street level. Names appear close up.
-- **Show places** off hides them all.
+- **Show places** off hides them all — except the cameras.
+- **Cameras** are the same switches as the Map column in *Settings › Road alerts & reports*: your own camera reports and
+  OpenStreetMap's cameras, with an alert ahead. Changing them in either place changes both.
 - On phones and newer head units the places come with the map itself. On older head units (picture-tile map) they are
   downloaded for about 5 km around you from the map service (MapTiler; OpenStreetMap's Overpass service as a backup)
   and kept for 30 days — the first time in a new area they can take a minute to appear. Airports are not shown there.
