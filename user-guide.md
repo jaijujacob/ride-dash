@@ -4,7 +4,7 @@ title: Ride-Dash user manual
 
 # Ride-Dash user manual
 
-_Version 1.16.1 · November 2026_
+_Version 1.17.0 · November 2026_
 
 Ride-Dash turns the phone in your holder — or your car's Android head unit — into a calm, complete car dashboard:
 live speed, gear, heading and altitude, the road you are on and its speed limit, trip statistics, terrain, speed
@@ -13,13 +13,24 @@ works on the device; no account needed.
 
 ![Ride-Dash in the Duo layout](images/manual/duo_white_driving_1600x720.png)
 
-**Contents:** [What's new](#whats-new-in-1161) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
+**Contents:** [What's new](#whats-new-in-1170) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
 [3 The dashboard](#3-the-dashboard) · [4 Layouts and colours](#4-layouts-and-colours) · [5 Speed and speed limits](#5-speed-and-speed-limits) ·
 [6 Driving mode, terrain and road info](#6-driving-mode-terrain-and-road-info) · [7 Map](#7-map) ·
 [8 Places on the map](#8-places-on-the-map) · [9 Music](#9-music) · [10 Trips](#10-trips) ·
 [11 Breaks](#11-break-reminder) · [12 Speed breakers and road reports](#12-speed-breakers-and-road-reports) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Group ride](#17-group-ride) · [18 Troubleshooting](#18-troubleshooting)
+
+## What's new in 1.17.0
+
+- **Group rides survive the leader's phone going off:** if the leader's app crashes or the phone switches off, the ride
+  goes on for everyone else, who see "Leader offline". When the leader opens Ride-Dash again it asks **Resume group
+  ride …?** — *Resume* leads the ride again with its summary intact, *End ride* ends it for everyone (section 17).
+- **Speed limit on the full-screen map:** the sign now shows there too, top right beside the map buttons.
+- **Older car head units:** Classic and Modern maps look different again — Classic like the phones' Classic map,
+  Modern a simple flat map with switchable place icons (section 7).
+- **Saved routes and group ride plans** show an icon, the route (start → destination), its stops and distance.
+- The dock's icons line up, the button that shows and hides the apps is larger, and Settings read better in portrait.
 
 ## What's new in 1.16.1
 
@@ -176,7 +187,8 @@ works on the device; no account needed.
 
 ## What's new in 1.5.0
 
-- **Road speed limits:** a speed-limit sign for the road you are on (from OpenStreetMap, where mapped), and
+- **Road speed limits:** a speed-limit sign for the road you are on (from OpenStreetMap, where mapped; on the full-screen
+  map at the top right, beside the map buttons), and
   "Slow down" at that limit plus a tolerance you choose (section 5).
 - **Street name and road info:** the road you are on, the terrain with its gradient ("UPHILL 6 %") and the next speed
   breaker, shown where turn-by-turn normally appears (section 6).
@@ -434,7 +446,7 @@ the card over the map.
 - **Following the car:** the map keeps the car in view. Drag it to look around; it comes back to the car 10 seconds after
   you last touched it, or at once with the **re-centre** button. Switching between the dashboard and the full-screen map
   keeps the car in view.
-- **Map style:** *Classic* (dark street map, default) or *Modern* (a crisper vector map, on devices whose graphics allow it).
+- **Map style:** *Classic* (dark street map, default) or *Modern* (a crisper vector map; on units whose graphics can't draw it, a simple flat dark map with switchable place icons).
 - **Places:** the places you choose (section 8). The places button on the map shows or hides them all.
 - **Full screen:** the expand button fills the screen with the map; Back returns.
 - **Next turn** of Ride-Dash's own route (below), or from Google Maps or Waze while they navigate (needs the access in
@@ -782,6 +794,12 @@ time). Tap a rider for **Call**, **WhatsApp** or **Follow on map**. Alerts appea
 behind", "… has stopped", "… has lost signal", "… reached the regroup point", "… reached the lunch stop", "… left the
 group ride" — switch each in *Settings › Group ride*. The leader can set a **regroup point** or **destination** by
 pressing and holding the map.
+
+**If the leader's phone goes off.** The ride never ends because the leader's app crashed or the phone switched off or
+lost signal — only *End group ride* ends it. The others keep riding and see **Leader offline** on the leader's marker
+and in the member list. When the leader opens Ride-Dash again it asks **Resume group ride …?**: *Resume* leads the ride
+again (sharing, controls and the ride summary carry on), *End ride* ends it for everyone. If the ride has already
+ended, it says "This group ride has ended". Members who restart rejoin automatically, or with the link, QR or code.
 
 **After the ride.** A summary shows the distance, time, members and planned vs actual start, distance and time at each
 stop. **Export this ride** (and *Settings › Trip & speed › Group rides › Export group rides*) writes an Excel file;
