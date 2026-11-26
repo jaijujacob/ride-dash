@@ -4,7 +4,7 @@ title: Ride-Dash user manual
 
 # Ride-Dash user manual
 
-_Version 1.17.0 · November 2026_
+_Version 1.18.0 · November 2026_
 
 Ride-Dash turns the phone in your holder — or your car's Android head unit — into a calm, complete car dashboard:
 live speed, gear, heading and altitude, the road you are on and its speed limit, trip statistics, terrain, speed
@@ -13,13 +13,27 @@ works on the device; no account needed.
 
 ![Ride-Dash in the Duo layout](images/manual/duo_white_driving_1600x720.png)
 
-**Contents:** [What's new](#whats-new-in-1170) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
+**Contents:** [What's new](#whats-new-in-1180) · [1 Installing](#1-installing) · [2 First start](#2-first-start) ·
 [3 The dashboard](#3-the-dashboard) · [4 Layouts and colours](#4-layouts-and-colours) · [5 Speed and speed limits](#5-speed-and-speed-limits) ·
 [6 Driving mode, terrain and road info](#6-driving-mode-terrain-and-road-info) · [7 Map](#7-map) ·
 [8 Places on the map](#8-places-on-the-map) · [9 Music](#9-music) · [10 Trips](#10-trips) ·
 [11 Breaks](#11-break-reminder) · [12 Speed breakers and road reports](#12-speed-breakers-and-road-reports) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Group ride](#17-group-ride) · [18 Troubleshooting](#18-troubleshooting)
+
+## What's new in 1.18.0
+
+- **Saved locations:** save Home, Work and your favourite places with the star in the place search or on the
+  "Navigate to …?" card (also after a long-press on the map). They are listed beside the search box, Home and Work
+  first, and in the route planner and group ride plans (the star button); picking one needs no search. Change or delete
+  them in *Settings › Location › Saved locations* (section 7).
+- **Navigation comes back** if Ride-Dash closes unexpectedly: reopened within 30 minutes it carries on by itself,
+  later it asks "Resume navigation to …?".
+- **Trips stay whole during navigation or a group ride:** stops don't end the trip or close the app; after a very long
+  stop (3 hours, adjustable) it asks once (section 10).
+- **The screen rotates automatically** (it follows the phone's rotation lock; car head units stay landscape).
+- The map's **places button** is now a pin (slashed when places are hidden); hold it to choose which places show.
+- Tidier dialogs and a new **Report** menu layout; a crash some phones had while loading the list of apps is fixed.
 
 ## What's new in 1.17.0
 
@@ -358,7 +372,8 @@ You can also upload a background image and your logo (*Settings › Vehicle*).
 
 ![Duo in Blue](images/manual/duo_blue_driving_1600x720.png)
 
-**Phone upright?** Choose *Portrait* (or *Auto rotate*) in *Settings › Display › Orientation*. Portrait has its own design,
+**Phone upright?** Ride-Dash turns with the phone (*Auto rotate*, the default — it follows the phone's rotation lock;
+head units stay landscape), or choose *Portrait* in *Settings › Display › Orientation*. Portrait has its own design,
 the same whichever layout you picked, in your colour scheme: the speed with gear and rpm next to the compass and road,
 the trip display across the full width, the map from edge to edge, and the music controls at the bottom. The top line shows
 the time and weather on the left and the day and date on the right; the phone's battery percentage is under the driving
@@ -447,7 +462,8 @@ the card over the map.
   you last touched it, or at once with the **re-centre** button. Switching between the dashboard and the full-screen map
   keeps the car in view.
 - **Map style:** *Classic* (dark street map, default) or *Modern* (a crisper vector map; on units whose graphics can't draw it, a simple flat dark map with switchable place icons).
-- **Places:** the places you choose (section 8). The places button on the map shows or hides them all.
+- **Places:** the places you choose (section 8). The **pin button** on the map shows or hides them all (a slashed,
+  dimmed pin while hidden); hold it to open the list of place types.
 - **Full screen:** the expand button fills the screen with the map; Back returns.
 - **Next turn** of Ride-Dash's own route (below), or from Google Maps or Waze while they navigate (needs the access in
   step 2), appears on the dashboard.
@@ -464,6 +480,14 @@ the card over the map.
 **Search a place.** The **🔍 button** on the map opens a search box: type a place or an address (for example *lulu
 mall* or *MG Road Kochi*) and press Search. Places near you are listed first, each with how far away it is; tap one for
 the same "Navigate to …?" question.
+
+**Saved locations.** Left of the search box (under it in portrait) are your saved places: **Home** and **Work**
+at the top (*Set Home* / *Set Work*: search the place and tap it, or *My position*), then the others, most recently
+used first. Tap one to go there — no search needed. Save a place with the **☆ star** on a search result or on the
+"Navigate to …?" card (also after a long-press on the map); you can change the name before saving. In the route
+planner and group ride plans the **★ button** beside Search and Map picks a saved place for the start, a stop or the
+destination. Hold a saved place, or go to *Settings › Location › Saved locations*, to rename it, change its icon, add a
+note, move its pin to where you are, or delete it. Saved places stay on the device and can go into backups.
 
 **Navigating on the Ride-Dash map.** After **Navigate** the route appears as a pale blue line on the map with a
 red pin at the destination (the part already driven turns grey), and the dashboard's
@@ -547,6 +571,9 @@ YouTube Music, the radio app, Bluetooth audio.
   At a planned stop of a group ride it waits until the stop's planned time is over. *Settings › Trip & speed › Ask before
   ending trip* (off: the trip just ends after the stationary time) and *Stationary time before asking* (2, 3, 5 or
   10 minutes). The power button (End trip & exit) ends it at once.
+- **During navigation or a group ride** stops never end the trip — no question, no closing — so a traffic jam or a
+  long halt stays one trip. Only after a very long stop (*Settings › Trip & speed › During navigation or a group ride*,
+  3 hours by default) it asks "End trip?" once, without ending by itself.
 - **The app closes itself** after a trip ended this way: **"Trip saved. Closing Ride-Dash in 30 seconds"** (spoken
   too, with voice alerts on). **Stay open** keeps it running until the next trip has ended; touching the screen starts
   the 30 seconds again. It stays open during a group ride (or one starting within 30 minutes), while navigating to a
@@ -709,6 +736,7 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
 | Vehicle | Vehicle type (car, SUV, motorcycle or scooter), preset, fuel, transmission, engine capacity (50–8000 cc), aspiration (for gear / rpm) | Car · Diesel SUV · 5-speed manual |
 | Vehicle | Tyre size, idle, redline; Advanced: gear ratios, final drive, rpm calibration | from the preset |
 | Trip & speed | Ask before ending trip · stationary time before asking | on · 3 min |
+| Trip & speed | During navigation or a group ride: ask after | 3 h |
 | Trip & speed | Close app after trip ends | on |
 | Trip & speed | Close a trip without GPS after | 5 min |
 | Trip & speed | Voice · speech rate · pitch | Automatic · 0.95× · 1.0× |
@@ -726,7 +754,7 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
 | Map | Map style | Classic |
 | Map | Show places · heading-up · next-turn card | on · on · on |
 | Map | Map points of interest | essentials, vehicle, restaurants, hotels, rest areas, viewpoints (section 8) |
-| Display | Orientation: Landscape, Portrait or Auto rotate (portrait has its own design, the same for every layout, in your colours) | Landscape |
+| Display | Orientation: Auto rotate, Landscape or Portrait (portrait has its own design, the same for every layout, in your colours; head units stay landscape) | Auto rotate |
 | Display | 24-hour clock · driving mode indicator | on · on |
 | Display | Full screen | on |
 | Display | Keep screen on | While driving / charging |
@@ -758,7 +786,7 @@ The last 10 spots are in *Settings › Trip & speed › Parking history* and in 
 - **Delete:** *Delete all trip data* removes trips, routes and parking spots. Uninstalling removes everything.
 - Nothing is uploaded, except what Group ride shares with your group while you're in one (section 17): see the
   [privacy policy](privacy-policy.html).
-- Backups also hold, as you choose, your road reports and saved group ride plans.
+- Backups also hold, as you choose, your road reports, saved group ride plans and saved locations.
 
 ## 17. Group ride
 
