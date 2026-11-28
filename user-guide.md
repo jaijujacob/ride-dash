@@ -4,7 +4,7 @@ title: Ride-Dash user manual
 
 # Ride-Dash user manual
 
-_Version 1.18.0 · November 2026_
+_Version 1.18.1 · November 2026_
 
 Ride-Dash turns the phone in your holder — or your car's Android head unit — into a calm, complete car dashboard:
 live speed, gear, heading and altitude, the road you are on and its speed limit, trip statistics, terrain, speed
@@ -20,6 +20,14 @@ works on the device; no account needed.
 [11 Breaks](#11-break-reminder) · [12 Speed breakers and road reports](#12-speed-breakers-and-road-reports) · [13 Voice alerts](#13-voice-alerts) ·
 [14 Where's my car](#14-wheres-my-car) · [15 Settings](#15-settings-reference) ·
 [16 Export and storage](#16-export-storage-and-deleting-data) · [17 Group ride](#17-group-ride) · [18 Troubleshooting](#18-troubleshooting)
+
+## What's new in 1.18.1
+
+- **Group rides share road reports:** what anyone in the ride reports shows on everyone's map and warns them ahead —
+  only within the group, and deleted when the ride ends.
+- **Fuel stop and Breakdown:** during a group ride the Report menu has two new tiles. The group sees who it is, how far
+  away, which vehicle, and is asked to take a short break or to come and help; tap **Sorted, back on the road** when
+  you're moving again (section 17).
 
 ## What's new in 1.18.0
 
@@ -662,7 +670,9 @@ mapped in OpenStreetMap are downloaded with the speed breakers and warn you too.
   "Speed camera reported." or "Sorry, I didn't catch that." (tap again). It listens only for that one moment, using your
   device's own speech recognition; the first tap asks for the microphone permission. Devices without speech
   recognition (many head units) don't show the microphone.
-- Your reports stay **only on this device** (and in your backups); other drivers don't see them.
+- Your reports stay **only on this device** (and in your backups); other drivers don't see them. The one exception is a
+  **group ride** (section 17): while the ride runs, what you report is also shown to that ride's members — never to
+  anyone else — and deleted with the ride.
 - *Settings › Road alerts & reports:* for each kind, map icon / alert and voice on or off; **My reports** lists them with
   **Delete** and **Merge duplicates**.
 
@@ -823,6 +833,20 @@ behind", "… has stopped", "… has lost signal", "… reached the regroup poin
 group ride" — switch each in *Settings › Group ride*. The leader can set a **regroup point** or **destination** by
 pressing and holding the map.
 
+**Reports and rider alerts.** While the ride runs, whatever anyone in the group reports (section 12) shows on everyone's
+map and warns everyone ahead of it, as if they had reported it themselves; it disappears when the ride ends. In the
+**Report** menu two tiles change during the ride: **Pothole / bad road** and **Waterlogging** make room for the rider's
+own alerts:
+
+- **Fuel stop** — you're low on fuel. The group sees "Anu needs a fuel stop", how far away you are (ahead or behind),
+  your vehicle, and "Take a short break so Anu can catch up". They tap **Got it**.
+- **Breakdown** — you've stopped with a problem. The group sees "Anu has broken down", where you are and your vehicle,
+  and hears it again every 3 minutes (twice) until they tap **On my way**. You see who is coming ("Bala is on the way").
+
+Both are spoken, and reach members whose app is closed as a notification. **Show on map** opens the full-screen map
+following that rider. When it's fixed, tap **Sorted, back on the road** on your card: the group hears that you're
+moving again. You can also say "petrol", "fuel", "breakdown", "puncture" or "flat tyre" to the microphone during a ride.
+
 **If the leader's phone goes off.** The ride never ends because the leader's app crashed or the phone switched off or
 lost signal — only *End group ride* ends it. The others keep riding and see **Leader offline** on the leader's marker
 and in the member list. When the leader opens Ride-Dash again it asks **Resume group ride …?**: *Resume* leads the ride
@@ -833,8 +857,8 @@ ended, it says "This group ride has ended". Members who restart rejoin automatic
 stop. **Export this ride** (and *Settings › Trip & speed › Group rides › Export group rides*) writes an Excel file;
 other members' phone numbers only if you tick it.
 
-**Privacy.** Only your latest position is kept online; the group and everything in it are deleted when the leader ends
-it or 24 hours after the last activity. Create and join only while stopped. Group ride needs Google Play services and
+**Privacy.** Only your latest position is kept online; the group and everything in it (reports and rider alerts too)
+are deleted when the leader ends it or 24 hours after the last activity. Create and join only while stopped. Group ride needs Google Play services and
 internet; it isn't shown on devices without them. Details: [privacy policy](privacy-policy.html).
 
 ## 18. Troubleshooting

@@ -4,7 +4,7 @@ title: Ride-Dash privacy policy
 
 # Ride-Dash — Privacy Policy
 
-_Last updated: 23 November 2026 (version 1.16.0)_
+_Last updated: 28 November 2026 (version 1.18.1)_
 
 Ride-Dash is a car dashboard and home-screen launcher. It has no user accounts, no analytics and no advertising. Apart
 from **Group ride** (below), which you use only if you create or join a group, it has no server of its own.
@@ -41,7 +41,7 @@ counting the trip while another app is on top. Ride-Dash does not request backgr
   voice installed); Ride-Dash sends nothing for them.
 - **Road reports:** speed breakers, cameras, congestion, potholes and other hazards you report with the **Report**
   button or by voice are stored **only on your device** (and in backups you make); they are not shared with other
-  users. Speed and red-light cameras from OpenStreetMap come with the speed-breaker download above (same request,
+  users — except, during a group ride, with that ride's members (see Group ride below). Speed and red-light cameras from OpenStreetMap come with the speed-breaker download above (same request,
   approximate position, no extra data).
 - **Map tiles:** the map downloads map images for the area on screen from the
   [MapTiler](https://www.maptiler.com/) (Classic map style; tiles made from OpenStreetMap data) or
@@ -78,7 +78,9 @@ group (by link, QR code or a 6-character code).
 - **What is shared:** the name and phone number you enter, your vehicle's name, a colour, and — once the leader has
   started the ride — your live position (latitude, longitude, speed, heading, time). The group's other members see
   them on their map so they can find and call you. A planned ride also shares its plan (start, stops, destination,
-  planned times and route) and when members reach a stop.
+  planned times and route) and when members reach a stop. While the ride runs, road reports you make (type, position,
+  time and, for cameras, the direction) and a **Fuel stop** or **Breakdown** alert you send (with your position and your
+  vehicle's name) are shown to the group's members. Members keep the others' reports and alerts in memory only.
 - **Where:** in Google Firebase (Realtime Database, Anonymous Authentication, Cloud Messaging and Cloud Functions) on
   servers operated by Google for Ride-Dash, encrypted in transit. Firebase gives each installation an anonymous ID; no
   account, email or password is involved. A Firebase messaging token lets the group reach your device (for example
@@ -87,7 +89,8 @@ group (by link, QR code or a 6-character code).
   leader starts the ride; sharing stops when you tap **Stop sharing** or leave, and the notification shows while it runs.
 - **Deletion:** when the leader ends the group, or 24 hours after the last activity (for a planned ride that hasn't
   started, 24 hours after its planned start), the group and all its data — positions, names, phone numbers, the plan —
-  are deleted from the server automatically. When you leave, your own entries are deleted at once.
+  are deleted from the server automatically, including the shared reports and alerts. When you leave, your own entries
+  are deleted at once.
 - **On your device:** a summary of finished group rides (members' names and vehicles, stop times; other members' phone
   numbers only if you choose) and saved group ride plans stay **only on your device** for the export and backups you
   make. Scanning a QR code uses the camera on the device only; nothing is uploaded.
